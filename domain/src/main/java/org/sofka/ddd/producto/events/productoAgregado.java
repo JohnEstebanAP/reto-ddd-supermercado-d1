@@ -45,47 +45,47 @@ public class productoAgregado extends DomainEvent {
     }
 
 
-    public ProductoId getProductoId() {
+    public ProductoId productoId() {
         return productoId;
     }
 
-    public Ubicacion getUbicacion() {
+    public Ubicacion ubicacion() {
         return ubicacion;
     }
 
-    public Proveedor getProveedor() {
+    public Proveedor proveedor() {
         return proveedor;
     }
 
-    public EstadoDelProducto getEstadoDelProducto() {
+    public EstadoDelProducto estadoDelProducto() {
         return estadoDelProducto;
     }
 
-    public NombreProducto getNombreProducto() {
+    public NombreProducto nombreProducto() {
         return nombreProducto;
     }
 
-    public NombreMarca getNombreMarca() {
+    public NombreMarca nombreMarca() {
         return nombreMarca;
     }
 
-    public Stock getStock() {
+    public Stock stock() {
         return stock;
     }
 
-    public FechaProducto getFechaProducto() {
+    public FechaProducto fechaProducto() {
         return fechaProducto;
     }
 
-    public FechaCaducidad getFechaCaducidad() {
+    public FechaCaducidad fechaCaducidad() {
         return fechaCaducidad;
     }
 
-    public FechaIngreso getFechaIngreso() {
+    public FechaIngreso fechaIngreso() {
         return fechaIngreso;
     }
 
-    public Precio getPrecio() {
+    public Precio precio() {
         return precio;
     }
 }

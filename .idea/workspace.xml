@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="entidades del [AR] Producto">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/ProductoChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/AgregarProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/productoAgregado.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="evento y comando de AgregarProducto del[AR] Producto">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/InicializarEmpleadoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseproducto/AgregarProductoUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Proveedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/AgregarProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/AgregarProducto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/productoAgregado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/productoAgregado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +62,11 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sofka.ddd.usecaseproducto" />
       <recent name="org.sofka.ddd.producto.events" />
       <recent name="org.sofka.ddd.producto" />
       <recent name="org.sofka.ddd.producto.commands" />
       <recent name="org.sofka.ddd.producto.values" />
-      <recent name="org.sofka.ddd.factura.values" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CrearEmpleadoUseCaseTest">
@@ -273,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656712447447</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="evento y comando de AgregarProducto del[AR] Producto">
+      <created>1656714721410</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1656714721410</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -321,7 +327,8 @@
     <MESSAGE value="values del [AR] Factura" />
     <MESSAGE value="values del [AR] Producto" />
     <MESSAGE value="entidades del [AR] Producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="entidades del [AR] Producto" />
+    <MESSAGE value="evento y comando de AgregarProducto del[AR] Producto" />
+    <option name="LAST_COMMIT_MESSAGE" value="evento y comando de AgregarProducto del[AR] Producto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

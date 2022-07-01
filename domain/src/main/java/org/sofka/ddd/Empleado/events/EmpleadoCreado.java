@@ -1,14 +1,15 @@
 package org.sofka.ddd.Empleado.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
+import org.sofka.ddd.Empleado.values.EmpleadoId;
 import org.sofka.ddd.Empleado.values.NombreEmpleado;
 
-public class NombreDeUnAreaCambiado extends DomainEvent {
-    private final AreaId entityId;
+public class EmpleadoCreado extends DomainEvent {
+    private final EmpleadoId entityId;
     private final NombreEmpleado nombre;
 
-    public NombreDeUnAreaCambiado(AreaId entityId, NombreEmpleado nombre) {
-        super("joyeria.area.nombredeunareacambiado");
+    public EmpleadoCreado(EmpleadoId entityId, NombreEmpleado nombre) {
+        super("ddd.empleado.empleadocreado");
         this.nombre = nombre;
         this.entityId = entityId;
     }
@@ -17,7 +18,7 @@ public class NombreDeUnAreaCambiado extends DomainEvent {
         return nombre;
     }
 
-    public AreaId getAreaId() {
+    public EmpleadoId getVendedorId() {
         return entityId;
     }
 }

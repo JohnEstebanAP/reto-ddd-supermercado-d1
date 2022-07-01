@@ -1,14 +1,14 @@
-package org.sofka.ddd.usecasevvendedor;
+package org.sofka.ddd.usecaseEmpleado;
 
 import co.com.sofka.business.generic.UseCase;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 import org.sofka.ddd.Empleado.Empleado;
-import org.sofka.ddd.Empleado.commands.CrearVendedor;
+import org.sofka.ddd.Empleado.commands.CrearEmpleado;
 
-public class CrearVendedorUseCase extends UseCase<RequestCommand<CrearVendedor>, ResponseEvents> {
+public class CrearEmpleadoUseCase extends UseCase<RequestCommand<CrearEmpleado>, ResponseEvents> {
     @Override
-    public void executeUseCase(RequestCommand<CrearVendedor> CrearVendedorRequest) {
+    public void executeUseCase(RequestCommand<CrearEmpleado> CrearVendedorRequest) {
         var command = CrearVendedorRequest.getCommand();
         var vendedor = new Empleado(
                 command.getEntityId(),

@@ -7,7 +7,7 @@ import java.util.HashSet;
 
 public class EmpleadoChange extends EventChange {
     public EmpleadoChange(Empleado vendedor) {
-        apply((VendedorCreado event) -> {
+        apply((EmpleadoCreado event) -> {
             vendedor.nombre = event.getNombre();
             vendedor.calificaciones = new HashSet<>();
         });
@@ -30,7 +30,7 @@ public class EmpleadoChange extends EventChange {
             calificacion.cambiarComentario(event.getComentario());
         });
 
-        apply((NombreCambiado event) -> {
+        apply((NombreActualizado event) -> {
             vendedor.nombre = event.getNombre();
         });
 

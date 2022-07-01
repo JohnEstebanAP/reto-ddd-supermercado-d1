@@ -9,13 +9,15 @@ public class Documento extends Entity<DocumentoId> {
   private NumeroDocumento numeroDocumento;
   private TipoDocumento tipoDocumento;
 
-  public Documento(DocumentoId entityId, NumeroDocumento numeroDocumento, TipoDocumento tipoDocumento) {
+  public Documento(
+      DocumentoId entityId, NumeroDocumento numeroDocumento, TipoDocumento tipoDocumento) {
     super(entityId);
     this.numeroDocumento = numeroDocumento;
     this.tipoDocumento = tipoDocumento;
   }
 
-  public Documento asignarDocumento(DocumentoId entityId, NumeroDocumento numeroDocumento, TipoDocumento tipoDocumento) {
+  public Documento asignarDocumento(
+      DocumentoId entityId, NumeroDocumento numeroDocumento, TipoDocumento tipoDocumento) {
     return new Documento(entityId, numeroDocumento, tipoDocumento);
   }
 
@@ -27,11 +29,19 @@ public class Documento extends Entity<DocumentoId> {
     this.tipoDocumento = tipoDocumento;
   }
 
-  public NumeroDocumento NumeroDocumento() {
+  public NumeroDocumento numeroDocumento() {
     return numeroDocumento;
   }
 
-  public TipoDocumento TipoDocumento() {
+  public void numeroDocumento(NumeroDocumento numeroDocumento) {
+    this.numeroDocumento = numeroDocumento;
+  }
+
+  public TipoDocumento tipoDocumento() {
     return tipoDocumento;
+  }
+
+  public void tipoDocumento(TipoDocumento tipoDocumento) {
+    this.tipoDocumento = tipoDocumento;
   }
 }

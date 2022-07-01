@@ -1,8 +1,8 @@
 package org.sofka.ddd.Empleado.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.Empleado.values.NombreEmpleado;
 import org.sofka.ddd.Empleado.values.EmpleadoId;
+import org.sofka.ddd.Empleado.values.NombreEmpleado;
 
 public class NombreCambiado extends DomainEvent {
     private final EmpleadoId entityId;

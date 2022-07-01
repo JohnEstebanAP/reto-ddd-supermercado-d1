@@ -23,7 +23,7 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
 
     private Empleado(EmpleadoId entityId) {
         super(entityId);
-        subscribe(new VendedorChange(this));
+        subscribe(new EmpleadoChange(this));
     }
 
     public static Empleado from(EmpleadoId vendedorId, List<DomainEvent> events){

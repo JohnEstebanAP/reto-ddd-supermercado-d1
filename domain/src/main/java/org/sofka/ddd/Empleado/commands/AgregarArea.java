@@ -1,8 +1,8 @@
 package org.sofka.ddd.Empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.Empleado.values.NombreEmpleado;
 import org.sofka.ddd.Empleado.values.EmpleadoId;
+import org.sofka.ddd.Empleado.values.NombreEmpleado;
 
 public class AgregarArea extends Command {
     private final EmpleadoId vendedorId;

@@ -4,37 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="configuración de los archivos pom.xml">
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="se agregaron los value objects de la [AR]Empleado y so entidad Permisos">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Documento.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecasevvendedor/CrearVendedorUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecasevvendedor/CrearVendedorUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/VendedorAsociado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/VendedorAsociado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Area.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/Calificacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/VendedorChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/VendedorChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/AgregarArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/AgregarCalificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarCalificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarComentarioDeUnaCalificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarComentarioDeUnaCalificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarNombreDeUnArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombreDeUnArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarPuntajeDeUnaCalificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarPuntajeDeUnaCalificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CrearVendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearVendedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/AreaAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/AreaAgregada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/CalificacionAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/CalificacionAgregada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/ComentarioDeUnaCalificacionCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/ComentarioDeUnaCalificacionCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/NombreCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/NombreDeUnAreaCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreDeUnAreaCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/PuntajeDeUnaCalificacionCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PuntajeDeUnaCalificacionCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/VendedorCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/VendedorCreado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/AreaId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/CalificacionId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TelefonoEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/Nombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/NombreEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/Puntaje.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/VendedorId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/EmpleadoId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Area.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Permisos.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Permisos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/VendedorChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/EmpleadoChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombreDeUnArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombreDeUnArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearVendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearVendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/VendedorCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/VendedorCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/tipoEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoEmpleado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +203,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656648785888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="se agregaron los value objects de la [AR]Empleado">
+      <created>1656650910299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656650910299</updated>
+    </task>
+    <task id="LOCAL-00006" summary="se agregaron los value objects de la [AR]Empleado y so entidad Permisos">
+      <created>1656651005885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656651005885</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +253,9 @@
     <MESSAGE value="pruebas unitarias para crear un cliente (falla)" />
     <MESSAGE value="union de todo el trabajo" />
     <MESSAGE value="configuración de los archivos pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuración de los archivos pom.xml" />
+    <MESSAGE value="se agregaron los value objects de la [AR]Empleado" />
+    <MESSAGE value="se agregaron los value objects de la [AR]Empleado y so entidad Permisos" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agregaron los value objects de la [AR]Empleado y so entidad Permisos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

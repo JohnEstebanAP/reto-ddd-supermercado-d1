@@ -1,11 +1,8 @@
 package org.sofka.ddd.Empleado;
 
 import co.com.sofka.domain.generic.Entity;
-import org.sofka.ddd.Empleado.values.NombreEmpleado;
 import org.sofka.ddd.Empleado.values.PermisoId;
 import org.sofka.ddd.Empleado.values.TipoPermiso;
-
-import java.util.Objects;
 
 public class Permisos extends Entity<PermisoId> {
   private TipoPermiso tipoPermiso;

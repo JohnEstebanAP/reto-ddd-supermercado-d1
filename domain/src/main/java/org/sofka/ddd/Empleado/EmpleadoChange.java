@@ -5,8 +5,8 @@ import org.sofka.ddd.Empleado.events.*;
 
 import java.util.HashSet;
 
-public class VendedorChange extends EventChange {
-    public VendedorChange(Empleado vendedor) {
+public class EmpleadoChange extends EventChange {
+    public EmpleadoChange(Empleado vendedor) {
         apply((VendedorCreado event) -> {
             vendedor.nombre = event.getNombre();
             vendedor.calificaciones = new HashSet<>();

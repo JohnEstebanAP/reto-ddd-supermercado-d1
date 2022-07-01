@@ -1,9 +1,7 @@
 package org.sofka.ddd.factura.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.factura.values.ClienteId;
 import org.sofka.ddd.factura.values.FacturaId;
-import org.sofka.ddd.factura.values.NombreCliente;
 
 public class ActualizarNombreDeUnCliente extends Command {
 

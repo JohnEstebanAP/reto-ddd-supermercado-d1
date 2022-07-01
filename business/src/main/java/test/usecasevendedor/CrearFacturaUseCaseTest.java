@@ -4,7 +4,6 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import org.sofka.ddd.factura.commands.AgregarFactura;
 import org.sofka.ddd.factura.events.FacturaAgregada;
-import org.sofka.ddd.factura.values.ClienteId;
 import org.sofka.ddd.factura.values.FacturaId;
 import org.sofka.ddd.usecasefactura.CrearFacturaUseCase;
 import org.junit.jupiter.api.Assertions;

@@ -1,25 +1,23 @@
 package org.sofka.ddd.factura.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.factura.Clasificacion;
+import org.sofka.ddd.factura.Transaccion;
 import org.sofka.ddd.factura.Factura;
-import org.sofka.ddd.factura.values.ClienteId;
-import org.sofka.ddd.factura.values.NombreCliente;
 
 public class AgregarCliente extends Command {
 
   private final Factura factura;
   private final ClienteId clienteId;
   private final NombreCliente nombreCliente;
-  private final Clasificacion clasificacion;
+  private final Transaccion clasificacion;
 
-  public AgregarCliente(Factura factura, ClienteId clienteId, NombreCliente nombreCliente, Clasificacion clasificacion) {
+  public AgregarCliente(Factura factura, ClienteId clienteId, NombreCliente nombreCliente, Transaccion clasificacion) {
     this.factura = factura;
     this.clienteId = clienteId;
     this.nombreCliente = nombreCliente;
     this.clasificacion = clasificacion;
   }
-  public AgregarCliente(ClienteId clienteId, NombreCliente nombreCliente, Clasificacion clasificacion) {
+  public AgregarCliente(ClienteId clienteId, NombreCliente nombreCliente, Transaccion clasificacion) {
     this.factura = null;
     this.clienteId = clienteId;
     this.nombreCliente = nombreCliente;
@@ -35,7 +33,7 @@ public class AgregarCliente extends Command {
   public NombreCliente getNombreCliente() {
     return nombreCliente;
   }
-  public Clasificacion getClasificacion() {
+  public Transaccion getClasificacion() {
     return clasificacion;
   }
 }

@@ -1,8 +1,7 @@
 package org.sofka.ddd.factura.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.factura.values.NombreCliente;
-import org.sofka.ddd.Empleado.values.EmpleadoId;
+import org.sofka.ddd.empleado.values.EmpleadoId;
 
 public class VendedorAsociado extends DomainEvent {
 

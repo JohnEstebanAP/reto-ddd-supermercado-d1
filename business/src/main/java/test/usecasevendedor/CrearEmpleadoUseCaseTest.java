@@ -2,18 +2,18 @@ package test.usecasevendedor;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
-import org.sofka.ddd.Empleado.Documento;
-import org.sofka.ddd.Empleado.Permisos;
-import org.sofka.ddd.Empleado.TipoDeEmpleado;
-import org.sofka.ddd.Empleado.values.*;
+import org.sofka.ddd.empleado.Documento;
+import org.sofka.ddd.empleado.Permisos;
+import org.sofka.ddd.empleado.TipoDeEmpleado;
+import org.sofka.ddd.empleado.values.*;
 import org.sofka.ddd.usecaseEmpleado.CrearEmpleadoUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.sofka.ddd.Empleado.commands.CrearEmpleado;
-import org.sofka.ddd.Empleado.events.EmpleadoCreado;
+import org.sofka.ddd.empleado.commands.CrearEmpleado;
+import org.sofka.ddd.empleado.events.EmpleadoCreado;
 
 import java.util.HashSet;
 import java.util.Set;

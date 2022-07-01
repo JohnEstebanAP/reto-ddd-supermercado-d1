@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="values del [AR] Producto">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Ubicacion.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="entidades del [AR] Producto">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/ProductoChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/AgregarProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/productoAgregado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Material.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Proveedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/EstadoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/EstadoDelProductoId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/MaterialId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/NombreProvedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/NombreProveedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/TelefonoProvedar.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/TelefonoProveedor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +63,11 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sofka.ddd.producto.events" />
       <recent name="org.sofka.ddd.producto" />
+      <recent name="org.sofka.ddd.producto.commands" />
       <recent name="org.sofka.ddd.producto.values" />
       <recent name="org.sofka.ddd.factura.values" />
-      <recent name="org.sofka.ddd.factura.events" />
-      <recent name="org.sofka.ddd.cliente" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CrearEmpleadoUseCaseTest">
@@ -268,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656708790859</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="entidades del [AR] Producto">
+      <created>1656712447447</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656712447447</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +320,8 @@
     <MESSAGE value="commands de el [AR] Empleado" />
     <MESSAGE value="values del [AR] Factura" />
     <MESSAGE value="values del [AR] Producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="values del [AR] Producto" />
+    <MESSAGE value="entidades del [AR] Producto" />
+    <option name="LAST_COMMIT_MESSAGE" value="entidades del [AR] Producto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

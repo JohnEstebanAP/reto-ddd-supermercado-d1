@@ -20,7 +20,7 @@ public class Proveedor extends AggregateEvent<ProveedorId> {
         this.telefonoProveedor = telefonoProveedor;
     }
 
-    public void ActualizarNombreProveedor(NombreProveedor nombreProveedor) {
+    public void actualizarNombreProveedor(NombreProveedor nombreProveedor) {
         this.nombreProveedor = nombreProveedor;
     }
 }

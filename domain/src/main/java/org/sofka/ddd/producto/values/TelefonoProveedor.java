@@ -4,11 +4,11 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class TelefonoProvedar implements ValueObject<String> {
+public class TelefonoProveedor implements ValueObject<String> {
 
   private final Long value;
 
-  public TelefonoProvedar(String value) {
+  public TelefonoProveedor(String value) {
     try {
 
       if (value.isEmpty()) {
@@ -45,7 +45,7 @@ public class TelefonoProvedar implements ValueObject<String> {
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
-    TelefonoProvedar telefono = (TelefonoProvedar) o;
+    TelefonoProveedor telefono = (TelefonoProveedor) o;
     return Objects.equals(value, telefono.value);
   }
 

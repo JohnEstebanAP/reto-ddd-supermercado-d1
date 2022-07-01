@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="primer caso de uso del [AR]Empleado">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/InicializarEmpleado.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="validaciones de los objetos de valor en él [AR]Empleado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearEmpleadoUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/EmpleadoChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/EmpleadoChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarArea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarCalificacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarComentarioDeUnaCalificacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombreDeUnArea.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarPuntajeDeUnaCalificacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/EmpleadoCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/EmpleadoCreado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpledoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpleadoEliminado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearEmpleadoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearEmpleadoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/NumeroDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/NumeroDocumento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TelefonoEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TelefonoEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoDocumento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoPermiso.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoPermiso.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +71,7 @@
       <recent name="org.sofka.ddd.Empleado.values" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.InicializarEmpleadoUseCaseTest">
+  <component name="RunManager" selected="JUnit.CrearEmpleadoUseCaseTest.cuandoSeCreaUnVendedor">
     <configuration name="CrearEmpleadoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
@@ -159,9 +152,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrearEmpleadoUseCaseTest.cuandoSeCreaUnVendedor" />
         <item itemvalue="JUnit.InicializarEmpleadoUseCaseTest" />
         <item itemvalue="JUnit.InicializarEmpleadoUseCaseTest.cuandoSeInicializaUnEmpleado" />
-        <item itemvalue="JUnit.CrearEmpleadoUseCaseTest.cuandoSeCreaUnVendedor" />
         <item itemvalue="JUnit.CrearFacturaUseCaseTest.cuandoSeCreaUnaFactura" />
         <item itemvalue="JUnit.CrearEmpleadoUseCaseTest" />
       </list>
@@ -232,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656657063536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="primer Tesst para el CrearEmpleadoUseCase.java">
+      <created>1656686361959</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1656686361959</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,7 +274,9 @@
     <MESSAGE value="se agregaron los eventos de dominio del [AR]Empleado" />
     <MESSAGE value="actualización de los appendChange del [AR]Empleado" />
     <MESSAGE value="primer caso de uso del [AR]Empleado" />
-    <option name="LAST_COMMIT_MESSAGE" value="primer caso de uso del [AR]Empleado" />
+    <MESSAGE value="primer Tesst para el CrearEmpleadoUseCase.java" />
+    <MESSAGE value="validaciones de los objetos de valor en él [AR]Empleado" />
+    <option name="LAST_COMMIT_MESSAGE" value="validaciones de los objetos de valor en él [AR]Empleado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

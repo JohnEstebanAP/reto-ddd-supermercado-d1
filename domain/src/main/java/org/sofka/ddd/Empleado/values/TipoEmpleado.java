@@ -5,29 +5,33 @@ import co.com.sofka.domain.generic.ValueObject;
 import java.util.Objects;
 
 public class TipoEmpleado implements ValueObject<String> {
-    private final String value;
 
-    public TipoEmpleado(String value) {
-        this.value = Objects.requireNonNull(value);
-        if(this.value.isBlank()){
-            throw new IllegalArgumentException("El nombre no puede estar vació");
+    private enum TiposEmpleado{ JEFE_DE_VENTAS, JEFE_DE_ZONA, SUPERVISOR, SUPERVISOR_SEGUNDO, SUPERVISOR_TERCERO, ASISTENTE_DE_VETAS};
+
+    TiposEmpleado tipoEmpleado;
+
+    public TipoEmpleado(String tipoEmpleado) {
+        try{
+            if (tipoEmpleado.isEmpty()) {
+                throw new IllegalArgumentException("El tipo de empleado no puede estar vació");
+            }
+
+            this.tipoEmpleado = Enum.valueOf(TiposEmpleado.class , tipoEmpleado) ;
+        }catch(Exception e){
+            throw new IllegalArgumentException(e.getMessage());
         }
     }
 
     public String value() {
-        return value;
+        return tipoEmpleado.name();
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TipoEmpleado nombre = (TipoEmpleado) o;
-        return Objects.equals(value, nombre.value);
+        TipoEmpleado that = (TipoEmpleado) o;
+        return Objects.equals(tipoEmpleado, that.tipoEmpleado);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(value);
-    }
 }

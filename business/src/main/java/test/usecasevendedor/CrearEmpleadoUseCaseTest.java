@@ -33,16 +33,18 @@ public class CrearEmpleadoUseCaseTest {
     Set<Permisos> permisos = new HashSet<>();
 
     PermisoId permisoId  = PermisoId.of("permiso1");
-    TipoPermiso tipoPermiso = new TipoPermiso("1");
+    TipoPermiso tipoPermiso = new TipoPermiso("VENDER_PRODUCTO");
+    TipoPermiso tipoPermiso2 = new TipoPermiso("GENERAR_FACTURA");
     permisos.add(new Permisos(permisoId, tipoPermiso));
+    permisos.add(new Permisos(permisoId, tipoPermiso2));
 
     DocumentoId documentoId = DocumentoId.of("1017272663");
     NumeroDocumento numeroDocumento      = new NumeroDocumento("1017272663");
-    TipoDocumento tipoDocumento = new TipoDocumento("CEDULA");
+    TipoDocumento tipoDocumento = new TipoDocumento("CEDULA_DE_CIUDADANIA");
     Documento documento = new Documento(documentoId, numeroDocumento, tipoDocumento);
 
     TipoDeEmpleadoId tipoDeEmpleadoId = TipoDeEmpleadoId.of("te1");
-    TipoEmpleado tipoEmpleado = new TipoEmpleado("asistente");
+    TipoEmpleado tipoEmpleado = new TipoEmpleado("ASISTENTE_DE_VETAS");
 
     TipoDeEmpleado tipoDeEmpleado = new TipoDeEmpleado(tipoDeEmpleadoId, tipoEmpleado);
 

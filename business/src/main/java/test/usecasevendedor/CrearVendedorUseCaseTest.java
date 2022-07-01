@@ -2,16 +2,16 @@ package test.usecasevendedor;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
-import org.example.joyeria.usecasevvendedor.CrearVendedorUseCase;
-import org.example.joyeria.vendedor.events.VendedorCreado;
-import org.example.joyeria.vendedor.values.Nombre;
-import org.example.joyeria.vendedor.values.VendedorId;
+import org.sofka.ddd.usecasevvendedor.CrearVendedorUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.example.joyeria.vendedor.commands.CrearVendedor;
+import org.sofka.ddd.vendedor.commands.CrearVendedor;
+import org.sofka.ddd.vendedor.events.VendedorCreado;
+import org.sofka.ddd.vendedor.values.Nombre;
+import org.sofka.ddd.vendedor.values.VendedorId;
 
 @ExtendWith(MockitoExtension.class)
 public class CrearVendedorUseCaseTest {

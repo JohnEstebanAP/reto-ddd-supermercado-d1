@@ -1,6 +1,4 @@
 
->
-domain/pom.xml,8\b\8b11330a6810846535e4b5ba2024ccfcee112862
 k
 ;domain/src/main/java/org/example/joyeria/vendedor/Area.java,c\6\c6f4e281f4bb68e3eb4ddac2fbd59dfb5dcd747c
 u
@@ -33,10 +31,6 @@ _domain/src/main/java/org/example/joyeria/vendedor/commands/CambiarPuntajeDeUnaC
 Mdomain/src/main/java/org/example/joyeria/vendedor/commands/CrearVendedor.java,3\0\307c3efb8db97bbf322752a59bb58da4f5d2884b
 o
 ?domain/src/main/java/org/example/joyeria/vendedor/Vendedor.java,0\0\000b0f65c6a8ef235ff5b54b8711efd88efcccd8
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-@
-business/pom.xml,d\4\d4ebdfff43bfaf86e620b416afb4835b5f67b594
 x
 Hdomain/src/main/java/org/example/joyeria/vendedor/values/VendedorId.java,6\5\65d02d81c57fb51d0ddc6799f4fe5ec6fd4cebd2
 t

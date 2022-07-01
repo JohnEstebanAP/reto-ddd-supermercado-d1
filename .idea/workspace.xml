@@ -4,7 +4,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="union de todo el trabajo" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="union de todo el trabajo">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b11330a6810846535e4b5ba2024ccfcee112862" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/4/d4ebdfff43bfaf86e620b416afb4835b5f67b594" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/example/joyeria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/example/joyeria/usecasefactura/CrearFacturaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecasefactura/CrearFacturaUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/example/joyeria/usecasevvendedor/CrearVendedorUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecasevvendedor/CrearVendedorUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearFacturaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearFacturaUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/Clasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Clasificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/ClienteChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/ClienteChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/commands/ActualizarNombreDeUnCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/ActualizarNombreDeUnCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/commands/AgregarClasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarClasificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/commands/AgregarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/commands/AgregarFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/commands/AsociarProducto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AsociarProducto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/commands/CambiarFechaDeUnaFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarFechaDeUnaFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/commands/CambiarTipoDeUnaClasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarTipoDeUnaClasificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/ClasificacionAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClasificacionAgregada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/ClienteAgregado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteAgregado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/FacturaAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaAgregada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/FechaDeUnaFacturaCambiada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FechaDeUnaFacturaCambiada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/NombreDeUnClienteActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/NombreDeUnClienteActualizado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/ProductoAsociado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ProductoAsociado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/TipoDeUnaClasificacionCambiada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/TipoDeUnaClasificacionCambiada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/VendedorAsociado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/VendedorAsociado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/values/Clasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/Clasificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/values/ClasificacionId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/ClasificacionId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/values/ClienteId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/ClienteId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/values/FacturaId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/FacturaId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/values/Fecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/Fecha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/values/NombreCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/NombreCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/values/Tipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/Tipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/Material.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Material.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/Proveedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Proveedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/Descripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/Descripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/Direccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/Direccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/MaterialId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/MaterialId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/Nombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/Nombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/Precio.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/Precio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/ProductoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/ProductoId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/ProveedorId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/ProveedorId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/producto/values/TipoMaterial.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/values/TipoMaterial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/Area.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/Area.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/Calificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/Calificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/Vendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/VendedorChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/VendedorChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/commands/AgregarArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/AgregarArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/commands/AgregarCalificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/AgregarCalificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/commands/CambiarComentarioDeUnaCalificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarComentarioDeUnaCalificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/commands/CambiarNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/commands/CambiarNombreDeUnArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarNombreDeUnArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/commands/CambiarPuntajeDeUnaCalificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CambiarPuntajeDeUnaCalificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/commands/CrearVendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/commands/CrearVendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/events/AreaAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/AreaAgregada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/events/CalificacionAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/CalificacionAgregada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/events/ComentarioDeUnaCalificacionCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/ComentarioDeUnaCalificacionCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/events/NombreCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/NombreCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/events/NombreDeUnAreaCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/NombreDeUnAreaCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/events/PuntajeDeUnaCalificacionCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/PuntajeDeUnaCalificacionCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/events/VendedorCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/events/VendedorCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/values/AreaId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/AreaId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/values/CalificacionId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/CalificacionId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/values/Comentario.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/Comentario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/values/Nombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/Nombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/values/Puntaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/Puntaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/vendedor/values/VendedorId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/vendedor/values/VendedorId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +103,7 @@
         <entry key="$PROJECT_DIR$/.." value="john" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -37,20 +117,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "/home/john/Desarrollo/Desarrollo_sofka/ddd/reto-ddd-supermercado-d1",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/john/Desarrollo/Desarrollo_sofka/ddd/reto-ddd-supermercado-d1&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
@@ -61,7 +141,7 @@
       <recent name="usecasefactura" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CrearVendedorUseCaseTest">
+  <component name="RunManager" selected="JUnit.CrearVendedorUseCaseTest.cuandoSeCreaUnVendedor">
     <configuration name="CrearClienteUseCaseTest.cuandoSeCreaUnCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
@@ -142,10 +222,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CrearVendedorUseCaseTest" />
-        <item itemvalue="JUnit.CrearFacturaUseCaseTest" />
         <item itemvalue="JUnit.CrearVendedorUseCaseTest.cuandoSeCreaUnVendedor" />
         <item itemvalue="JUnit.CrearFacturaUseCaseTest.cuandoSeCreaUnaFactura" />
+        <item itemvalue="JUnit.CrearVendedorUseCaseTest" />
+        <item itemvalue="JUnit.CrearFacturaUseCaseTest" />
         <item itemvalue="JUnit.CrearClienteUseCaseTest.cuandoSeCreaUnCliente" />
       </list>
     </recent_temporary>
@@ -208,6 +288,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <MESSAGE value="Primer caso de uso (Crear Una Factura) pasa las pruebas unitarias" />
     <MESSAGE value="Primer caso de uso (Crear Una Factura) pasa las pruebas unitarias 2" />
     <MESSAGE value="pruebas unitarias para crear un cliente (falla)" />
@@ -218,7 +301,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/ClienteAgregado.java</url>
+          <url>file://$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteAgregado.java</url>
           <line>21</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>

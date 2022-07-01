@@ -4,71 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="commands de el [AR] Empleado">
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="values del [AR] Factura">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearEmpleadoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearEmpleadoUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearFacturaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearFacturaUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Documento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Documento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/EmpleadoChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/EmpleadoChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Permisos.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Permisos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/TipoDeEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/TipoDeEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/ActualizarPermiso.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/ActualizarPermiso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/ActualizarTelefono.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/ActualizarTelefono.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/ActualizarTipoDeEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/ActualizarTipoDeEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AsignarDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/AsignarDocumento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AsignarNumeroDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/AsignarNumeroDocumento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AsignarPermiso.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/AsignarPermiso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AsignarTipoDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/AsignarTipoDocumento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CambiarNombre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearTipoDeEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearTipoDeEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/EliminarPermiso.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/EliminarPermiso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/EliminarTipoDeEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/EliminarTipoDeEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/InicializarEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/InicializarEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/DocumentoAsignado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/DocumentoAsignado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/EmpleadoCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/EmpleadoCreado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/NombreActualizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NumeroDocumentoAsignado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/NumeroDocumentoAsignado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PermisoActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/PermisoActualizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PermisoAsignado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/PermisoAsignado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PermisoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/PermisoEliminado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TelefonoActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TelefonoActualizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeDocumentoAsignado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeDocumentoAsignado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpleadoActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeEmpleadoActualizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpleadoCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeEmpleadoCreado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpleadoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeEmpleadoEliminado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/DocumentoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/DocumentoId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/EmpleadoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/EmpleadoId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/NombreEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/NombreEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/NumeroDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/NumeroDocumento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/PermisoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/PermisoId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TelefonoEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/TelefonoEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoDeEmpleadoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/TipoDeEmpleadoId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoDocumento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/TipoDocumento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/TipoEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/values/TipoPermiso.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/values/TipoPermiso.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Clasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Transaccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/EstadoFactura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/ClienteChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/FacturaChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/ActualizarNombreDeUnCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/ActualizarNombreDeUnCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarClasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarClasificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarFactura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarTipoDeUnaClasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarTipoDeUnaClasificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClasificacionAgregada.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteAgregado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/ClienteAgregado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaAgregada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/NombreDeUnClienteActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/NombreDeUnClienteActualizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/VendedorAsociado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/VendedorAsociado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/Clasificacion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/ClasificacionId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/ClienteId.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/Fecha.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/Fecha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/NombreCliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/Tipo.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -303,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656696693607</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="values del [AR] Factura">
+      <created>1656707025660</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656707025660</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -348,7 +294,8 @@
     <MESSAGE value="primer Tesst para el CrearEmpleadoUseCase.java" />
     <MESSAGE value="validaciones de los objetos de valor en él [AR]Empleado" />
     <MESSAGE value="commands de el [AR] Empleado" />
-    <option name="LAST_COMMIT_MESSAGE" value="commands de el [AR] Empleado" />
+    <MESSAGE value="values del [AR] Factura" />
+    <option name="LAST_COMMIT_MESSAGE" value="values del [AR] Factura" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

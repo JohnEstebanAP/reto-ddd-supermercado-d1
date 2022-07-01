@@ -1,22 +1,20 @@
-package org.sofka.ddd.vendedor.commands;
+package org.sofka.ddd.Empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.vendedor.values.CalificacionId;
-import org.sofka.ddd.vendedor.values.Puntaje;
-import org.sofka.ddd.vendedor.values.VendedorId;
+import org.sofka.ddd.Empleado.values.EmpleadoId;
 
 public class CambiarPuntajeDeUnaCalificacion extends Command {
-    private final VendedorId vendedorId;
+    private final EmpleadoId vendedorId;
     private final CalificacionId entityId;
     private final Puntaje puntaje;
 
-    public CambiarPuntajeDeUnaCalificacion(VendedorId vendedorId, CalificacionId entityId, Puntaje puntaje) {
+    public CambiarPuntajeDeUnaCalificacion(EmpleadoId vendedorId, CalificacionId entityId, Puntaje puntaje) {
         this.vendedorId = vendedorId;
         this.entityId = entityId;
         this.puntaje = puntaje;
     }
 
-    public VendedorId getVendedorId() {
+    public EmpleadoId getVendedorId() {
         return vendedorId;
     }
 

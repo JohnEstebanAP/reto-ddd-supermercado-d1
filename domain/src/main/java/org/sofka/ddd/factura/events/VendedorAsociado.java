@@ -2,14 +2,14 @@ package org.sofka.ddd.factura.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import org.sofka.ddd.factura.values.NombreCliente;
-import org.sofka.ddd.vendedor.values.VendedorId;
+import org.sofka.ddd.Empleado.values.EmpleadoId;
 
 public class VendedorAsociado extends DomainEvent {
 
-  VendedorId vendedorId;
+  EmpleadoId vendedorId;
   NombreCliente nombre;
 
-  public VendedorAsociado(VendedorId vendedorId, NombreCliente nombre) {
+  public VendedorAsociado(EmpleadoId vendedorId, NombreCliente nombre) {
     super("joyeria.cliente.vendedorasociado");
     this.vendedorId = vendedorId;
     this.nombre = nombre;
@@ -23,11 +23,11 @@ public class VendedorAsociado extends DomainEvent {
     this.nombre = nombre;
   }
 
-  public VendedorId getVendedorId() {
+  public EmpleadoId getVendedorId() {
     return vendedorId;
   }
 
-  public void setVendedorId(VendedorId vendedorId) {
+  public void setVendedorId(EmpleadoId vendedorId) {
     this.vendedorId = vendedorId;
   }
 }

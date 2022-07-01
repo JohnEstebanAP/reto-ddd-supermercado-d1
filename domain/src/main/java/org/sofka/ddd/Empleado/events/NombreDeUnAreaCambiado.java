@@ -1,20 +1,19 @@
-package org.sofka.ddd.vendedor.events;
+package org.sofka.ddd.Empleado.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.vendedor.values.AreaId;
-import org.sofka.ddd.vendedor.values.Nombre;
+import org.sofka.ddd.Empleado.values.NombreEmpleado;
 
 public class NombreDeUnAreaCambiado extends DomainEvent {
     private final AreaId entityId;
-    private final Nombre nombre;
+    private final NombreEmpleado nombre;
 
-    public NombreDeUnAreaCambiado(AreaId entityId, Nombre nombre) {
+    public NombreDeUnAreaCambiado(AreaId entityId, NombreEmpleado nombre) {
         super("joyeria.area.nombredeunareacambiado");
         this.nombre = nombre;
         this.entityId = entityId;
     }
 
-    public Nombre getNombre() {
+    public NombreEmpleado getNombre() {
         return nombre;
     }
 

@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.sofka.ddd.vendedor.commands.CrearVendedor;
-import org.sofka.ddd.vendedor.events.VendedorCreado;
-import org.sofka.ddd.vendedor.values.Nombre;
-import org.sofka.ddd.vendedor.values.VendedorId;
+import org.sofka.ddd.Empleado.commands.CrearVendedor;
+import org.sofka.ddd.Empleado.events.VendedorCreado;
+import org.sofka.ddd.Empleado.values.NombreEmpleado;
+import org.sofka.ddd.Empleado.values.EmpleadoId;
 
 @ExtendWith(MockitoExtension.class)
 public class CrearVendedorUseCaseTest {
@@ -21,8 +21,8 @@ public class CrearVendedorUseCaseTest {
   @Test
   public void cuandoSeCreaUnVendedor() {
     // arrange
-    VendedorId vendedorId = VendedorId.of("111111");
-    Nombre nombre = new Nombre("Sebastian");
+    EmpleadoId vendedorId = EmpleadoId.of("111111");
+    NombreEmpleado nombre = new NombreEmpleado("Sebastian");
     var command = new CrearVendedor(vendedorId, nombre);
 
     // act

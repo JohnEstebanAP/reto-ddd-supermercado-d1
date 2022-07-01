@@ -1,16 +1,16 @@
-package org.sofka.ddd.vendedor.values;
+package org.sofka.ddd.Empleado.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Comentario implements ValueObject<String> {
+public class NombreEmpleado implements ValueObject<String> {
     private final String value;
 
-    public Comentario(String value) {
+    public NombreEmpleado(String value) {
         this.value = Objects.requireNonNull(value);
         if(this.value.isBlank()){
-            throw new IllegalArgumentException("El comentario no puede estar vacio");
+            throw new IllegalArgumentException("El nombre no puede estar vació");
         }
     }
 
@@ -22,8 +22,8 @@ public class Comentario implements ValueObject<String> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Comentario that = (Comentario) o;
-        return Objects.equals(value, that.value);
+        NombreEmpleado nombre = (NombreEmpleado) o;
+        return Objects.equals(value, nombre.value);
     }
 
     @Override

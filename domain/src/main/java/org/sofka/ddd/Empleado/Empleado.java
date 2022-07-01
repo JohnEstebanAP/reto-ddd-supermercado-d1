@@ -1,37 +1,38 @@
-package org.sofka.ddd.vendedor;
+package org.sofka.ddd.Empleado;
 
-import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.domain.generic.AggregateEvent;
-import org.sofka.ddd.vendedor.events.*;
-import org.sofka.ddd.vendedor.values.*;
+import co.com.sofka.domain.generic.DomainEvent;
+import org.sofka.ddd.Empleado.events.*;
+import org.sofka.ddd.Empleado.values.EmpleadoId;
+import org.sofka.ddd.Empleado.values.NombreEmpleado;
 
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 
-public class Vendedor extends AggregateEvent<VendedorId> {
-    protected Nombre nombre;
+public class Empleado extends AggregateEvent<EmpleadoId> {
+    protected NombreEmpleado nombre;
     protected Set<Calificacion> calificaciones;
-    protected AreaId areaId;
 
-    public Vendedor(VendedorId entityId, Nombre nombre) {
+
+    public Empleado(EmpleadoId entityId, NombreEmpleado nombre) {
         super(entityId);
         appendChange(new VendedorCreado(entityId, nombre)).apply();
     }
 
-    private Vendedor(VendedorId entityId) {
+    private Empleado(EmpleadoId entityId) {
         super(entityId);
         subscribe(new VendedorChange(this));
     }
 
-    public static Vendedor from(VendedorId vendedorId, List<DomainEvent> events){
-        var vendedor= new Vendedor(vendedorId);
+    public static Empleado from(EmpleadoId vendedorId, List<DomainEvent> events){
+        var vendedor= new Empleado(vendedorId);
         events.forEach(vendedor::applyEvent);
         return vendedor;
     }
 
-    public void agregarArea(AreaId entityId, Nombre nombre) {
+    public void agregarArea(AreaId entityId, NombreEmpleado nombre) {
         Objects.requireNonNull(entityId);
         Objects.requireNonNull(nombre);
         appendChange(new AreaAgregada(entityId, nombre)).apply();
@@ -48,11 +49,11 @@ public class Vendedor extends AggregateEvent<VendedorId> {
         appendChange(new ComentarioDeUnaCalificacionCambiado(entityId, comentario)).apply();
     }
 
-    public void cambiarNombre(VendedorId entityId, Nombre nombre){
+    public void cambiarNombre(EmpleadoId entityId, NombreEmpleado nombre){
         appendChange(new NombreCambiado(entityId,nombre)).apply();
     }
 
-    public void cambiarNombreDeUnArea(AreaId entityId, Nombre nombre) {
+    public void cambiarNombreDeUnArea(AreaId entityId, NombreEmpleado nombre) {
         appendChange(new NombreDeUnAreaCambiado(entityId, nombre)).apply();
     }
 
@@ -69,7 +70,7 @@ public class Vendedor extends AggregateEvent<VendedorId> {
 
 
 
-    public Nombre nombre() {
+    public NombreEmpleado nombre() {
         return nombre;
     }
 

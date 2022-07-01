@@ -1,8 +1,6 @@
-package org.sofka.ddd.vendedor.events;
+package org.sofka.ddd.Empleado.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.vendedor.values.CalificacionId;
-import org.sofka.ddd.vendedor.values.Comentario;
 
 public class ComentarioDeUnaCalificacionCambiado extends DomainEvent {
     private final CalificacionId entityId;

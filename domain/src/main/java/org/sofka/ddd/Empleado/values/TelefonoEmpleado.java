@@ -1,16 +1,16 @@
-package org.sofka.ddd.vendedor.values;
+package org.sofka.ddd.Empleado.values;
 
 import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Puntaje implements ValueObject<String> {
+public class TelefonoEmpleado implements ValueObject<String> {
     private final String value;
 
-    public Puntaje(String value) {
+    public TelefonoEmpleado(String value) {
         this.value = Objects.requireNonNull(value);
         if(this.value.isBlank()){
-            throw new IllegalArgumentException("El puntaje no puede estar vacio");
+            throw new IllegalArgumentException("El teléfono no puede estar vació");
         }
     }
 
@@ -22,8 +22,8 @@ public class Puntaje implements ValueObject<String> {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Puntaje puntaje = (Puntaje) o;
-        return Objects.equals(value, puntaje.value);
+        TelefonoEmpleado telefono = (TelefonoEmpleado) o;
+        return Objects.equals(value, telefono.value);
     }
 
     @Override

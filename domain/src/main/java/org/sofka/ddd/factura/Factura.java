@@ -7,7 +7,7 @@ import org.sofka.ddd.factura.values.FacturaId;
 import org.sofka.ddd.factura.values.Fecha;
 import org.sofka.ddd.factura.values.NombreCliente;
 import org.sofka.ddd.producto.values.ProductoId;
-import org.sofka.ddd.vendedor.values.VendedorId;
+import org.sofka.ddd.Empleado.values.EmpleadoId;
 import org.sofka.ddd.factura.events.*;
 
 import java.util.List;
@@ -18,7 +18,7 @@ public class Factura extends AggregateEvent<FacturaId> {
   protected Cliente cliente;
   protected Set<ProductoId> productos;
 
-  protected VendedorId vendedorId;
+  protected EmpleadoId vendedorId;
 
   protected Fecha fecha;
   public Factura(FacturaId entityId, ClienteId clienteId) {
@@ -41,7 +41,7 @@ public class Factura extends AggregateEvent<FacturaId> {
     appendChange(new ClienteAgregado(cliente)).apply();
   }
 
-  public void asociarVendedor(VendedorId entityId, NombreCliente nombre) {
+  public void asociarVendedor(EmpleadoId entityId, NombreCliente nombre) {
     appendChange(new VendedorAsociado(entityId, nombre)).apply();
   }
 
@@ -73,11 +73,11 @@ public class Factura extends AggregateEvent<FacturaId> {
     this.productos = productos;
   }
 
-  public VendedorId getVendedorId() {
+  public EmpleadoId getVendedorId() {
     return vendedorId;
   }
 
-  public void setVendedorId(VendedorId vendedorId) {
+  public void setVendedorId(EmpleadoId vendedorId) {
     this.vendedorId = vendedorId;
   }
 

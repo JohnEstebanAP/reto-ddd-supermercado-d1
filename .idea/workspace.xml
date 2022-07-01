@@ -4,31 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="se agregaron las entidades de la [AR]Empleado">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/DocumentoAsignado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NumeroDocumentoAsignado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PermisoActualizado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PermisoAsignado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PermisoEliminado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TelefonoActualizado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeDocumentoAsignado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpleadoActualizado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpleadoCreado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpledoEliminado.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="primer caso de uso del [AR]Empleado">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/InicializarEmpleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecasevvendedor/CrearVendedorUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Documento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Documento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearVendedorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearEmpleadoUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/Empleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/EmpleadoChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/EmpleadoChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearVendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/AreaAgregada.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/CalificacionAgregada.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/ComentarioDeUnaCalificacionCambiado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreActualizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/NombreDeUnAreaCambiado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/PuntajeDeUnaCalificacionCambiado.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/VendedorCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/EmpleadoCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/AgregarCalificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarComentarioDeUnaCalificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarNombreDeUnArea.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CambiarPuntajeDeUnaCalificacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/commands/CrearEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/EmpleadoCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/EmpleadoCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpledoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/Empleado/events/TipoDeEmpleadoEliminado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,15 +71,15 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.usecasevendedor" />
       <recent name="org.sofka.ddd.Empleado.events" />
+      <recent name="org.sofka.ddd.usecaseEmpleado" />
       <recent name="org.sofka.ddd.Empleado" />
       <recent name="org.sofka.ddd.Empleado.values" />
-      <recent name="test.usecasevendedor" />
-      <recent name="org.example.joyeria.usecasefactura" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CrearVendedorUseCaseTest.cuandoSeCreaUnVendedor">
-    <configuration name="CrearClienteUseCaseTest.cuandoSeCreaUnCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InicializarEmpleadoUseCaseTest">
+    <configuration name="CrearEmpleadoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
@@ -98,14 +88,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.usecasevendedor" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearClienteUseCaseTest" />
-      <option name="METHOD_NAME" value="cuandoSeCreaUnCliente" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearEmpleadoUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrearFacturaUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrearEmpleadoUseCaseTest.cuandoSeCreaUnVendedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +103,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.usecasevendedor" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearFacturaUseCaseTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearEmpleadoUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeCreaUnVendedor" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,7 +126,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrearVendedorUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InicializarEmpleadoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
@@ -145,13 +135,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.usecasevendedor" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearVendedorUseCaseTest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.InicializarEmpleadoUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrearVendedorUseCaseTest.cuandoSeCreaUnVendedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InicializarEmpleadoUseCaseTest.cuandoSeInicializaUnEmpleado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
@@ -160,8 +150,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.usecasevendedor" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearVendedorUseCaseTest" />
-      <option name="METHOD_NAME" value="cuandoSeCreaUnVendedor" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.InicializarEmpleadoUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeInicializaUnEmpleado" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CrearVendedorUseCaseTest.cuandoSeCreaUnVendedor" />
+        <item itemvalue="JUnit.InicializarEmpleadoUseCaseTest" />
+        <item itemvalue="JUnit.InicializarEmpleadoUseCaseTest.cuandoSeInicializaUnEmpleado" />
+        <item itemvalue="JUnit.CrearEmpleadoUseCaseTest.cuandoSeCreaUnVendedor" />
         <item itemvalue="JUnit.CrearFacturaUseCaseTest.cuandoSeCreaUnaFactura" />
-        <item itemvalue="JUnit.CrearVendedorUseCaseTest" />
-        <item itemvalue="JUnit.CrearFacturaUseCaseTest" />
-        <item itemvalue="JUnit.CrearClienteUseCaseTest.cuandoSeCreaUnCliente" />
+        <item itemvalue="JUnit.CrearEmpleadoUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656652167356</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="se agregaron los eventos de dominio del [AR]Empleado">
+      <created>1656657063536</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656657063536</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -274,7 +271,10 @@
     <MESSAGE value="se agregaron los value objects de la [AR]Empleado" />
     <MESSAGE value="se agregaron los value objects de la [AR]Empleado y so entidad Permisos" />
     <MESSAGE value="se agregaron las entidades de la [AR]Empleado" />
-    <option name="LAST_COMMIT_MESSAGE" value="se agregaron las entidades de la [AR]Empleado" />
+    <MESSAGE value="se agregaron los eventos de dominio del [AR]Empleado" />
+    <MESSAGE value="actualización de los appendChange del [AR]Empleado" />
+    <MESSAGE value="primer caso de uso del [AR]Empleado" />
+    <option name="LAST_COMMIT_MESSAGE" value="primer caso de uso del [AR]Empleado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -283,6 +283,11 @@
           <url>file://$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteAgregado.java</url>
           <line>21</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/InicializarEmpleadoUseCaseTest.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

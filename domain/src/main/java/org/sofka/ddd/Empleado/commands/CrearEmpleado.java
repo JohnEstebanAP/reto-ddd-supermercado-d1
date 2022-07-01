@@ -12,22 +12,43 @@ import java.util.Set;
 
 public class CrearEmpleado extends Command {
 
-    protected NombreEmpleado nombreEmpleado;
-    protected TelefonoEmpleado telefonoEmpleado;
-    protected Set<Permisos> permisos;
-    protected Documento documento;
-    protected TipoDeEmpleado tipoEmpleado;
+    private final EmpleadoId entityId;
+    private final NombreEmpleado nombreEmpleado;
+    private final TelefonoEmpleado telefonoEmpleado;
+    private final Set<Permisos> permisos;
+    private final Documento documento;
+    private final TipoDeEmpleado tipoDeEmpleado;
 
-    public CrearEmpleado(EmpleadoId entityId, NombreEmpleado nombre) {
+    public CrearEmpleado(EmpleadoId entityId, NombreEmpleado nombreEmpleado, TelefonoEmpleado telefonoEmpleado, Set<Permisos> permisos, Documento documento, TipoDeEmpleado tipoDeEmpleado) {
         this.entityId = entityId;
-        this.nombre = nombre;
+        this.nombreEmpleado = nombreEmpleado;
+        this.telefonoEmpleado = telefonoEmpleado;
+        this.permisos = permisos;
+        this.documento = documento;
+        this.tipoDeEmpleado = tipoDeEmpleado;
     }
 
-    public EmpleadoId getEntityId() {
+    public NombreEmpleado nombreEmpleado() {
+        return nombreEmpleado;
+    }
+
+    public TelefonoEmpleado telefonoEmpleado() {
+        return telefonoEmpleado;
+    }
+
+    public Set<Permisos> permisos() {
+        return permisos;
+    }
+
+    public Documento documento() {
+        return documento;
+    }
+
+    public TipoDeEmpleado tipoDeEmpleado() {
+        return tipoDeEmpleado;
+    }
+
+    public EmpleadoId entityId() {
         return entityId;
-    }
-
-    public NombreEmpleado getNombre() {
-        return nombre;
     }
 }

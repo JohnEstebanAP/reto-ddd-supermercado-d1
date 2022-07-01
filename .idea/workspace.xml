@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="union de todo el trabajo" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="john" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BDoPiuXG5msRmvW07fDFDK9AWo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "/home/john/Desarrollo/Desarrollo_sofka/ddd/reto-ddd-supermercado-d1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.usecasevendedor" />
+      <recent name="org.example.joyeria.usecasefactura" />
+      <recent name="usecasefactura" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CrearVendedorUseCaseTest">
+    <configuration name="CrearClienteUseCaseTest.cuandoSeCreaUnCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearClienteUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeCreaUnCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrearFacturaUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearFacturaUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrearFacturaUseCaseTest.cuandoSeCreaUnaFactura" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearFacturaUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeCreaUnaFactura" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrearVendedorUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearVendedorUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrearVendedorUseCaseTest.cuandoSeCreaUnVendedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearVendedorUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeCreaUnVendedor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CrearVendedorUseCaseTest" />
+        <item itemvalue="JUnit.CrearFacturaUseCaseTest" />
+        <item itemvalue="JUnit.CrearVendedorUseCaseTest.cuandoSeCreaUnVendedor" />
+        <item itemvalue="JUnit.CrearFacturaUseCaseTest.cuandoSeCreaUnaFactura" />
+        <item itemvalue="JUnit.CrearClienteUseCaseTest.cuandoSeCreaUnCliente" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="" />
+      <created>1656449994303</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656449994303</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Primer caso de uso (Crear Una Factura) pasa las pruebas unitarias">
+      <created>1656565454288</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656565454288</updated>
+    </task>
+    <task id="LOCAL-00002" summary="pruebas unitarias para crear un cliente (falla)">
+      <created>1656608730531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656608730531</updated>
+    </task>
+    <task id="LOCAL-00003" summary="union de todo el trabajo">
+      <created>1656608925227</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656608925227</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="John_esteban" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Primer caso de uso (Crear Una Factura) pasa las pruebas unitarias" />
+    <MESSAGE value="Primer caso de uso (Crear Una Factura) pasa las pruebas unitarias 2" />
+    <MESSAGE value="pruebas unitarias para crear un cliente (falla)" />
+    <MESSAGE value="union de todo el trabajo" />
+    <option name="LAST_COMMIT_MESSAGE" value="union de todo el trabajo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura/events/ClienteAgregado.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

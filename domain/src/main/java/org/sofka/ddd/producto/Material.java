@@ -1,9 +1,7 @@
 package org.sofka.ddd.producto;
 
 import co.com.sofka.domain.generic.Entity;
-import org.sofka.ddd.producto.values.Descripcion;
 import org.sofka.ddd.producto.values.MaterialId;
-import org.sofka.ddd.producto.values.TipoMaterial;
 
 import java.util.Objects;
 

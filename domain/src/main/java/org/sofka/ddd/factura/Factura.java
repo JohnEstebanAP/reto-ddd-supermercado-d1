@@ -5,9 +5,7 @@ import co.com.sofka.domain.generic.DomainEvent;
 import org.sofka.ddd.cliente.values.ClienteId;
 import org.sofka.ddd.empleado.values.EmpleadoId;
 import org.sofka.ddd.factura.events.*;
-import org.sofka.ddd.factura.values.FacturaId;
-import org.sofka.ddd.factura.values.TotalPago;
-import org.sofka.ddd.factura.values.TransaccionId;
+import org.sofka.ddd.factura.values.*;
 import org.sofka.ddd.producto.values.ProductoId;
 
 import java.util.List;
@@ -94,10 +92,31 @@ public class Factura extends AggregateEvent<FacturaId> {
     appendChange(new ProductoAsociadoEliminado(facturaId, productoId)).apply();
   }
 
-  public void cambiarTotalPago(FacturaId facturaId, TransaccionId transaccionId, TotalPago totalPago) {
+  public void cambiarTotalPago(FacturaId facturaId, Transaccion transaccion, TotalPago totalPago) {
     Objects.requireNonNull(facturaId);
-    Objects.requireNonNull(transaccionId);
+    Objects.requireNonNull(transaccion);
     Objects.requireNonNull(totalPago);
-    appendChange(new TotalPagoCambiado(facturaId, transaccionId, totalPago)).apply();
+    appendChange(new TotalPagoCambiado(facturaId, transaccion, totalPago)).apply();
+  }
+
+  public void cambiarFechaDelaTransaccion(FacturaId facturaId, Transaccion transaccion, Fecha fecha) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(transaccion);
+    Objects.requireNonNull(fecha);
+    appendChange(new FechaDelaTransaccionCambiado(facturaId, transaccion, fecha)).apply();
+  }
+
+  public void cambiarEstadoFactura(FacturaId facturaId, EstadoFactura estadoFactura, EstadoActual estadoActual) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(estadoFactura);
+    Objects.requireNonNull(estadoActual);
+    appendChange(new EstadoFacturaCambiado(facturaId, estadoFactura, estadoActual)).apply();
+  }
+
+  public void cambiarFechaDelEstado(FacturaId facturaId, EstadoFactura estadoFactura, Fecha fecha) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(estadoFactura);
+    Objects.requireNonNull(fecha);
+    appendChange(new FechaDelEstadoCambiado(facturaId, estadoFactura, fecha)).apply();
   }
 }

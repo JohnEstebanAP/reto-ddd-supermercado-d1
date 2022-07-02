@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="se agregaron los vaues objet y las entidades del [AR] Cliente">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/ClienteChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/ClienteCreado.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="[AR] Cliente">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usucaseCliente/CrearClienteUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +60,11 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sofka.ddd.cliente.commands" />
+      <recent name="org.sofka.ddd.usucaseCliente" />
       <recent name="org.sofka.ddd.cliente" />
       <recent name="org.sofka.ddd.cliente.events" />
       <recent name="org.sofka.ddd.cliente.values" />
-      <recent name="test.usecasevendedor" />
-      <recent name="org.sofka.ddd.usecaseproducto" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.AgregarProductoUseCaseTest">
@@ -300,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656722684867</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="[AR] Cliente">
+      <created>1656724412773</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1656724412773</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +357,8 @@
     <MESSAGE value="AgregarProductoUseCase del[AR] Producto" />
     <MESSAGE value="AgregarProductoUseCaseTest del[AR] Producto, Paso el test :)" />
     <MESSAGE value="se agregaron los vaues objet y las entidades del [AR] Cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="se agregaron los vaues objet y las entidades del [AR] Cliente" />
+    <MESSAGE value="[AR] Cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="[AR] Cliente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

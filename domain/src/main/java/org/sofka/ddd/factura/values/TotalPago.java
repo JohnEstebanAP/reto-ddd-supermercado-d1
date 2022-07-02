@@ -8,8 +8,8 @@ public class TotalPago implements ValueObject<String> {
 
     private final Double value;
 
-    public TotalPago(String value){
-        this.value = Double.parseDouble(value);
+    public TotalPago(Double value){
+        this.value = value;
     }
 
     @Override

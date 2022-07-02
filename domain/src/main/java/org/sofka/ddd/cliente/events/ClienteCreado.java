@@ -2,17 +2,11 @@ package org.sofka.ddd.cliente.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import org.sofka.ddd.cliente.Direccion;
+import org.sofka.ddd.cliente.Documento;
 import org.sofka.ddd.cliente.MedioDePago;
 import org.sofka.ddd.cliente.values.ClienteId;
 import org.sofka.ddd.cliente.values.NombreCliente;
-import org.sofka.ddd.empleado.Documento;
-import org.sofka.ddd.empleado.Permisos;
-import org.sofka.ddd.empleado.TipoDeEmpleado;
-import org.sofka.ddd.empleado.values.EmpleadoId;
-import org.sofka.ddd.empleado.values.NombreEmpleado;
-import org.sofka.ddd.empleado.values.TelefonoEmpleado;
 
-import java.util.Set;
 
 public class ClienteCreado extends DomainEvent {
     private final ClienteId entityId;

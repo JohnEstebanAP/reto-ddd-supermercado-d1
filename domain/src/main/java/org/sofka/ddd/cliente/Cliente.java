@@ -5,27 +5,20 @@ import co.com.sofka.domain.generic.DomainEvent;
 import org.sofka.ddd.cliente.events.ClienteCreado;
 import org.sofka.ddd.cliente.values.ClienteId;
 import org.sofka.ddd.cliente.values.NombreCliente;
-import org.sofka.ddd.empleado.Documento;
-import org.sofka.ddd.empleado.EmpleadoChange;
-import org.sofka.ddd.empleado.Permisos;
-import org.sofka.ddd.empleado.TipoDeEmpleado;
-import org.sofka.ddd.empleado.events.*;
-import org.sofka.ddd.empleado.values.*;
 
 import java.util.List;
-import java.util.Objects;
-import java.util.Set;
+
 
 public class Cliente extends AggregateEvent<ClienteId> {
 
-  private NombreCliente NombreCliente;
+  private NombreCliente nombreCliente;
   private Documento documento;
   private MedioDePago medioDePago;
   private Direccion direccionCliente;
 
-  public Cliente(ClienteId entityId, org.sofka.ddd.cliente.values.NombreCliente nombreCliente, Documento documento, MedioDePago medioDePago, Direccion direccionCliente) {
+  public Cliente(ClienteId entityId,NombreCliente nombreCliente, Documento documento, MedioDePago medioDePago, Direccion direccionCliente) {
     super(entityId);
-    NombreCliente = nombreCliente;
+    this.nombreCliente = nombreCliente;
     this.documento = documento;
     this.medioDePago = medioDePago;
     this.direccionCliente = direccionCliente;
@@ -43,9 +36,9 @@ public class Cliente extends AggregateEvent<ClienteId> {
   }
 
   public static Cliente from(ClienteId clienteId, List<DomainEvent> events) {
-    var empleado = new Cliente(clienteId);
-    events.forEach(empleado::applyEvent);
-    return empleado;
+    var cliente = new Cliente(clienteId);
+    events.forEach(cliente::applyEvent);
+    return cliente;
   }
 
 /*

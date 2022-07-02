@@ -5,9 +5,7 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 import org.sofka.ddd.cliente.Cliente;
 import org.sofka.ddd.cliente.commands.CrearCliente;
-import org.sofka.ddd.cliente.values.ClienteId;
-import org.sofka.ddd.empleado.Empleado;
-import org.sofka.ddd.empleado.commands.CrearEmpleado;
+
 
 public class CrearClienteUseCase extends UseCase<RequestCommand<CrearCliente>, ResponseEvents> {
 

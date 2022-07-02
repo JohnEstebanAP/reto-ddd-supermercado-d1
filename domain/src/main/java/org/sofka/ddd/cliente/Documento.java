@@ -1,9 +1,9 @@
 package org.sofka.ddd.cliente;
 
 import co.com.sofka.domain.generic.Entity;
-import org.sofka.ddd.empleado.values.DocumentoId;
-import org.sofka.ddd.empleado.values.NumeroDocumento;
-import org.sofka.ddd.empleado.values.TipoDocumento;
+import org.sofka.ddd.cliente.values.DocumentoId;
+import org.sofka.ddd.cliente.values.NumeroDocumento;
+import org.sofka.ddd.cliente.values.TipoDocumento;
 
 public class Documento extends Entity<DocumentoId> {
   private NumeroDocumento numeroDocumento;

@@ -2,8 +2,12 @@
 
 ### John Esteban Alvarez Piedrahita <esteban.ea145@gmail.com>
 
-![image](https://user-images.githubusercontent.com/70281915/176820164-f418572e-b3ef-4daa-b08e-a6917145f892.png)
+Proyecto aplicando lo aprendido sobre las pautas DDD, donde se modela el contexto de los supermercados de uno el proseso que estos tiene i dentificando como core del domino las ventas y teniendo en conta que estos tiene un gra sistema para al logistica de los producto y su rotacion.
 
+Se realizo el modelo tanto estrategico como tactico del dominio.
+se puede oservar en -->> https://drive.google.com/file/d/1tkpjGLqqNtlVH-c8jgXLpsTOI2FFXAvZ/view?usp=sharing
+
+![image](https://user-images.githubusercontent.com/70281915/176820164-f418572e-b3ef-4daa-b08e-a6917145f892.png)
 
 ![image](https://user-images.githubusercontent.com/70281915/176986824-52f250c8-5f91-44be-a201-fab422a7afc2.png)
 

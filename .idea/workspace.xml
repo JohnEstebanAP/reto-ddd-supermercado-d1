@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="CrearClienteUseCaseTest para él [AR] Cliente  :)">
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="CrearFacturaUseCaseTest :)">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ProductoAsociadoEliminado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/VendedorActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/VendedorAsociado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecasefactura/CrearFacturaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecasefactura/CrearFacturaUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearFacturaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearFacturaUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/FacturaChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/FacturaChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaAgregada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/TotalPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/values/TotalPago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaEliminada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaEliminada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ProductoAsociado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ProductoAsociado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/TipoDeUnaClasificacionCambiada.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +70,11 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sofka.ddd.factura.events" />
+      <recent name="org.sofka.ddd.factura" />
       <recent name="test.usecasevendedor" />
       <recent name="org.sofka.ddd.cliente.commands" />
       <recent name="org.sofka.ddd.usucaseCliente" />
-      <recent name="org.sofka.ddd.cliente" />
-      <recent name="org.sofka.ddd.cliente.events" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CrearFacturaUseCaseTest">
@@ -321,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656727026764</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="CrearFacturaUseCaseTest :)">
+      <created>1656733771825</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1656733771825</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -376,7 +389,8 @@
     <MESSAGE value="[AR] Cliente" />
     <MESSAGE value="CrearClienteUseCase para él [AR] Cliente" />
     <MESSAGE value="CrearClienteUseCaseTest para él [AR] Cliente  :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="CrearClienteUseCaseTest para él [AR] Cliente  :)" />
+    <MESSAGE value="CrearFacturaUseCaseTest :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="CrearFacturaUseCaseTest :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

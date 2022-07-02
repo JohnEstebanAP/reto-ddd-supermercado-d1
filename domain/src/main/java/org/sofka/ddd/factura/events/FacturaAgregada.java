@@ -6,8 +6,6 @@ import org.sofka.ddd.empleado.values.EmpleadoId;
 import org.sofka.ddd.factura.EstadoFactura;
 import org.sofka.ddd.factura.Transaccion;
 import org.sofka.ddd.factura.values.FacturaId;
-import org.sofka.ddd.factura.values.Fecha;
-import org.sofka.ddd.factura.values.TotalPago;
 import org.sofka.ddd.producto.values.ProductoId;
 
 import java.util.Set;

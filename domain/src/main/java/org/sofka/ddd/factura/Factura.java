@@ -3,15 +3,12 @@ package org.sofka.ddd.factura;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import org.sofka.ddd.cliente.values.ClienteId;
-import org.sofka.ddd.empleado.events.NombreActualizado;
-import org.sofka.ddd.empleado.values.NombreEmpleado;
-import org.sofka.ddd.factura.values.EstadoActual;
-import org.sofka.ddd.factura.values.FacturaId;
-import org.sofka.ddd.factura.values.Fecha;
-import org.sofka.ddd.factura.values.TotalPago;
-import org.sofka.ddd.producto.values.ProductoId;
 import org.sofka.ddd.empleado.values.EmpleadoId;
 import org.sofka.ddd.factura.events.*;
+import org.sofka.ddd.factura.values.FacturaId;
+import org.sofka.ddd.factura.values.TotalPago;
+import org.sofka.ddd.factura.values.TransaccionId;
+import org.sofka.ddd.producto.values.ProductoId;
 
 import java.util.List;
 import java.util.Objects;
@@ -56,10 +53,51 @@ public class Factura extends AggregateEvent<FacturaId> {
     return factura;
   }
 
-  public void actualizarNombre(EmpleadoId entityId, NombreEmpleado nombre) {
+  public void eliminarFactura(FacturaId entityId) {
     Objects.requireNonNull(entityId);
-    Objects.requireNonNull(nombre);
-    appendChange(new NombreActualizado(entityId, nombre)).apply();
+    appendChange(new FacturaEliminada(entityId)).apply();
   }
 
+  public void agregarCliente(FacturaId facturaId, ClienteId clienteId) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(clienteId);
+    appendChange(new ClienteAgregado(facturaId, clienteId)).apply();
+  }
+
+  public void actualizarCliente(FacturaId facturaId, ClienteId clienteId) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(clienteId);
+    appendChange(new ClienteActualizado(facturaId, clienteId)).apply();
+  }
+
+  public void asociarVendedor(FacturaId facturaId, EmpleadoId empleadoId) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(empleadoId);
+    appendChange(new VendedorAsociado(facturaId, empleadoId)).apply();
+  }
+
+  public void actualizarVendedor(FacturaId facturaId, EmpleadoId empleadoId) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(empleadoId);
+    appendChange(new VendedorActualizado(facturaId, empleadoId)).apply();
+  }
+
+  public void asociarProducto(FacturaId facturaId, ProductoId productoId) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(productoId);
+    appendChange(new ProductoAsociado(facturaId, productoId)).apply();
+  }
+
+  public void eliminarProductoAsociado(FacturaId facturaId, ProductoId productoId) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(productoId);
+    appendChange(new ProductoAsociadoEliminado(facturaId, productoId)).apply();
+  }
+
+  public void cambiarTotalPago(FacturaId facturaId, TransaccionId transaccionId, TotalPago totalPago) {
+    Objects.requireNonNull(facturaId);
+    Objects.requireNonNull(transaccionId);
+    Objects.requireNonNull(totalPago);
+    appendChange(new TotalPagoCambiado(facturaId, transaccionId, totalPago)).apply();
+  }
 }

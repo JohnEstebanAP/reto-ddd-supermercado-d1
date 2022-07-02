@@ -2,7 +2,9 @@ package org.sofka.ddd.cliente;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import org.sofka.ddd.cliente.events.ClienteCreado;
 import org.sofka.ddd.cliente.values.ClienteId;
+import org.sofka.ddd.cliente.values.NombreCliente;
 import org.sofka.ddd.empleado.Documento;
 import org.sofka.ddd.empleado.EmpleadoChange;
 import org.sofka.ddd.empleado.Permisos;
@@ -16,41 +18,43 @@ import java.util.Set;
 
 public class Cliente extends AggregateEvent<ClienteId> {
 
-  private NombreEmpleado nombreEmpleado;
-  private TelefonoEmpleado telefonoEmpleado;
-  protected Set<Permisos> permisos;
-  protected Documento documento;
-  protected TipoDeEmpleado tipoDeEmpleado;
+  private NombreCliente NombreCliente;
+  private Documento documento;
+  private MedioDePago medioDePago;
+  private Direccion direccionCliente;
 
-
-  public Cliente(ClienteId entityId, NombreEmpleado nombreEmpleado, TelefonoEmpleado telefonoEmpleado, Set<Permisos> permisos, Documento documento, TipoDeEmpleado tipoDeEmpleado) {
+  public Cliente(ClienteId entityId, org.sofka.ddd.cliente.values.NombreCliente nombreCliente, Documento documento, MedioDePago medioDePago, Direccion direccionCliente) {
     super(entityId);
-    this.nombreEmpleado = nombreEmpleado;
-    this.telefonoEmpleado = telefonoEmpleado;
-    this.permisos = permisos;
+    NombreCliente = nombreCliente;
     this.documento = documento;
-    this.tipoDeEmpleado = tipoDeEmpleado;
+    this.medioDePago = medioDePago;
+    this.direccionCliente = direccionCliente;
 
-    //appendChange(new EmpleadoCreado(entityId, nombreEmpleado, telefonoEmpleado, permisos, documento, tipoDeEmpleado)).apply();
+    appendChange(new ClienteCreado(entityId, nombreCliente, documento, medioDePago, direccionCliente)).apply();
   }
 
   private Cliente(ClienteId entityId) {
     super(entityId);
-   // subscribe(new EmpleadoChange(this));
+    subscribe(new ClienteChange(this));
   }
-/*
-  public static Cliente from(EmpleadoId empleadoId, List<DomainEvent> events) {
-    var empleado = new Cliente(empleadoId);
+
+  public void crearCliente(ClienteId entityId){
+    this.entityId = entityId;
+  }
+
+  public static Cliente from(ClienteId clienteId, List<DomainEvent> events) {
+    var empleado = new Cliente(clienteId);
     events.forEach(empleado::applyEvent);
     return empleado;
-  }*/
+  }
 
+/*
   public void inicializarEmpleado() {
     var empleadoId  = entityId;
     Objects.requireNonNull(entityId);
    // appendChange(new EmpleadoInicializado(entityId)).apply();
   }
-
+/*
   public void actualizarNombre(EmpleadoId entityId, NombreEmpleado nombre) {
     Objects.requireNonNull(entityId);
     Objects.requireNonNull(nombre);
@@ -119,7 +123,7 @@ public class Cliente extends AggregateEvent<ClienteId> {
     Objects.requireNonNull(tipoDeEmpleado);
     appendChange(new TipoDeEmpleadoActualizado(entityId, tipoDeEmpleado)).apply();
   }
-
+*/
   /*
     protected Optional<Calificacion> getCalificacionPorId(CalificacionId calificacionId) {
         return calificaciones()
@@ -128,7 +132,7 @@ public class Cliente extends AggregateEvent<ClienteId> {
                 .findFirst();
     }
   */
-
+/*
   public NombreEmpleado nombreEmpleado() {
     return nombreEmpleado;
   }
@@ -155,5 +159,5 @@ public class Cliente extends AggregateEvent<ClienteId> {
 
   public void tipoDeEmpleado(TipoDeEmpleado tipoDeEmpleado) {
     this.tipoDeEmpleado = tipoDeEmpleado;
-  }
+  }*/
 }

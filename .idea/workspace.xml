@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="AgregarProductoUseCaseTest del[AR] Producto, Paso el test :)">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Direccion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Documento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/MedioDePago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/DireccionCasa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/DireccionId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/DocumentoId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/MedioDePagoId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/MontoDeDinero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/NumeroDocumento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/TipoDePago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/TipoDocumento.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="se agregaron los vaues objet y las entidades del [AR] Cliente">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/ClienteChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/ClienteCreado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +63,10 @@
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.sofka.ddd.cliente" />
+      <recent name="org.sofka.ddd.cliente.events" />
       <recent name="org.sofka.ddd.cliente.values" />
       <recent name="test.usecasevendedor" />
       <recent name="org.sofka.ddd.usecaseproducto" />
-      <recent name="org.sofka.ddd.producto.events" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.AgregarProductoUseCaseTest">
@@ -301,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656720971356</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="se agregaron los vaues objet y las entidades del [AR] Cliente">
+      <created>1656722684867</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1656722684867</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -352,7 +351,8 @@
     <MESSAGE value="evento y comando de AgregarProducto del[AR] Producto" />
     <MESSAGE value="AgregarProductoUseCase del[AR] Producto" />
     <MESSAGE value="AgregarProductoUseCaseTest del[AR] Producto, Paso el test :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="AgregarProductoUseCaseTest del[AR] Producto, Paso el test :)" />
+    <MESSAGE value="se agregaron los vaues objet y las entidades del [AR] Cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agregaron los vaues objet y las entidades del [AR] Cliente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

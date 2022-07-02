@@ -345,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656783175992</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Tets de ActualizarNombreUseCaseTest, Pasa es tets:)">
+      <created>1656790883374</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1656790883374</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

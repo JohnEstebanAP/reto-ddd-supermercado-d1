@@ -54,10 +54,9 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
     appendChange(new TelefonoActualizado(telefonoEmpleado)).apply();
   }
 
-  public void asignarPermiso(EmpleadoId entityId, Set<Permisos> permisos) {
-    Objects.requireNonNull(entityId);
+  public void asignarPermiso(Permisos permisos) {
     Objects.requireNonNull(permisos);
-    appendChange(new PermisoAsignado(entityId, permisos)).apply();
+    appendChange(new PermisoAsignado(permisos)).apply();
   }
 
   public void eliminarPermiso(EmpleadoId entityId, Set<Permisos> permisos) {

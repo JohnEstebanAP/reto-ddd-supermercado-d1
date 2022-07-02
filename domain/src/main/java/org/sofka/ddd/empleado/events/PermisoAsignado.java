@@ -7,20 +7,15 @@ import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import java.util.Set;
 
 public class PermisoAsignado extends DomainEvent {
-  private final EmpleadoId entityId;
-  private final Set<Permisos> permisos;
+  private final Permisos permisos;
 
-  public PermisoAsignado(EmpleadoId entityId, Set<Permisos> permisos) {
+  public PermisoAsignado(Permisos permisos) {
     super("ddd.empleado.permisoActualizado");
-    this.entityId = entityId;
     this.permisos = permisos;
   }
 
-  public Set<Permisos> permisos() {
+  public Permisos permisos() {
     return permisos;
   }
 
-  public EmpleadoId empleadoId() {
-    return entityId;
-  }
 }

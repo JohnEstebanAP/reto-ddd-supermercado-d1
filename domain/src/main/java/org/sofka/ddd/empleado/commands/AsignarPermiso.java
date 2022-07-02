@@ -1,23 +1,25 @@
 package org.sofka.ddd.empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
+import org.sofka.ddd.empleado.entitys.Permisos;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import org.sofka.ddd.empleado.values.ids.PermisoId;
 import org.sofka.ddd.empleado.values.TipoPermiso;
 
 public class AsignarPermiso extends Command {
-    private final PermisoId entityId;
-    private final TipoPermiso tipoPermiso;
+    private final EmpleadoId entityId;
+    private final Permisos permiso;
 
-    public AsignarPermiso(PermisoId entityId, TipoPermiso tipoPermiso) {
+    public AsignarPermiso(EmpleadoId entityId, Permisos permiso) {
         this.entityId = entityId;
-        this.tipoPermiso = tipoPermiso;
+        this.permiso  = permiso;
     }
 
-    public PermisoId entityId() {
+    public EmpleadoId entityId() {
         return entityId;
     }
-
-    public TipoPermiso tipoPermiso() {
-        return tipoPermiso;
+   public Permisos permiso() {
+        return permiso;
     }
+
 }

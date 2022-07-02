@@ -2,8 +2,12 @@ package org.sofka.ddd.empleado;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import org.sofka.ddd.empleado.entitys.Documento;
+import org.sofka.ddd.empleado.entitys.Permisos;
+import org.sofka.ddd.empleado.entitys.TipoDeEmpleado;
 import org.sofka.ddd.empleado.events.*;
 import org.sofka.ddd.empleado.values.*;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 
 import java.util.List;
 import java.util.Objects;
@@ -40,21 +44,14 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
     return empleado;
   }
 
-  public void inicializarEmpleado() {
-    var empleadoId  = entityId;
-    Objects.requireNonNull(entityId);
-    appendChange(new EmpleadoInicializado(entityId)).apply();
-  }
-
   public void actualizarNombre(NombreEmpleado nombre) {
     Objects.requireNonNull(nombre);
     appendChange(new NombreActualizado(nombre)).apply();
   }
 
-  public void actualizarTelefono(EmpleadoId entityId, TelefonoEmpleado telefonoEmpleado) {
-    Objects.requireNonNull(entityId);
+  public void actualizarTelefono(TelefonoEmpleado telefonoEmpleado) {
     Objects.requireNonNull(telefonoEmpleado);
-    appendChange(new TelefonoActualizado(entityId, telefonoEmpleado)).apply();
+    appendChange(new TelefonoActualizado(telefonoEmpleado)).apply();
   }
 
   public void asignarPermiso(EmpleadoId entityId, Set<Permisos> permisos) {

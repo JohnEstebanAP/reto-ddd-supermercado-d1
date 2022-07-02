@@ -1,7 +1,7 @@
-package org.sofka.ddd.empleado;
+package org.sofka.ddd.empleado.entitys;
 
 import co.com.sofka.domain.generic.Entity;
-import org.sofka.ddd.empleado.values.TipoDeEmpleadoId;
+import org.sofka.ddd.empleado.values.ids.TipoDeEmpleadoId;
 import org.sofka.ddd.empleado.values.TipoEmpleado;
 
 public class TipoDeEmpleado extends Entity<TipoDeEmpleadoId> {

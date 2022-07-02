@@ -2,7 +2,7 @@ package org.sofka.ddd.factura.commands;
 
 import co.com.sofka.domain.generic.Command;
 import org.sofka.ddd.cliente.values.ClienteId;
-import org.sofka.ddd.empleado.values.EmpleadoId;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import org.sofka.ddd.factura.EstadoFactura;
 import org.sofka.ddd.factura.Transaccion;
 import org.sofka.ddd.factura.values.FacturaId;

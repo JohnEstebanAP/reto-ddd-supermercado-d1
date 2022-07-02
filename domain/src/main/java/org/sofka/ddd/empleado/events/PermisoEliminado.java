@@ -1,8 +1,8 @@
 package org.sofka.ddd.empleado.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.empleado.Permisos;
-import org.sofka.ddd.empleado.values.EmpleadoId;
+import org.sofka.ddd.empleado.entitys.Permisos;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 
 import java.util.Set;
 

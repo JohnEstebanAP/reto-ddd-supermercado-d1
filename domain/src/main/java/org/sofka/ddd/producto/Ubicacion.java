@@ -1,8 +1,6 @@
 package org.sofka.ddd.producto;
 
 import co.com.sofka.domain.generic.Entity;
-import org.sofka.ddd.empleado.values.PermisoId;
-import org.sofka.ddd.empleado.values.TipoPermiso;
 import org.sofka.ddd.producto.values.Estanteria;
 import org.sofka.ddd.producto.values.Pasillo;
 import org.sofka.ddd.producto.values.UbicacionId;

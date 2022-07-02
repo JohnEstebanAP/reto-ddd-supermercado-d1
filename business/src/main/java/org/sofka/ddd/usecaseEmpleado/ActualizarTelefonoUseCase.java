@@ -5,16 +5,18 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
 import org.sofka.ddd.empleado.Empleado;
 import org.sofka.ddd.empleado.commands.ActualizarNombre;
+import org.sofka.ddd.empleado.commands.ActualizarTelefono;
 
-public class ActualizarNombreUseCase extends UseCase<RequestCommand<ActualizarNombre>, ResponseEvents> {
+public class ActualizarTelefonoUseCase extends UseCase<RequestCommand<ActualizarTelefono>, ResponseEvents> {
 
     @Override
-    public void executeUseCase(RequestCommand<ActualizarNombre> actualizarNombreRequestCommand) {
-        var command = actualizarNombreRequestCommand.getCommand();
+    public void executeUseCase(RequestCommand<ActualizarTelefono> actualizarTelefonoRequestCommand) {
+        var command = actualizarTelefonoRequestCommand.getCommand();
         var empleado = Empleado.from(command.entityId(), retrieveEvents());
 
-        empleado.actualizarNombre(command.nombre());
+        empleado.actualizarTelefono (command.telefonoEmpleado());
 
         emit().onResponse(new ResponseEvents(empleado.getUncommittedChanges()));
+
     }
 }

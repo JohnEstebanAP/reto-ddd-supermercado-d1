@@ -1,4 +1,4 @@
-package org.sofka.ddd.empleado.values;
+package org.sofka.ddd.empleado.values.ids;
 
 import co.com.sofka.domain.generic.Identity;
 

@@ -5,7 +5,7 @@ import org.sofka.ddd.empleado.events.EmpleadoCreado;
 
 public class EmpleadoChange extends EventChange {
   public EmpleadoChange(Empleado empleado) {
-
+/*
       apply(
               (EmpleadoCreado event) -> {
                   empleado.nombreEmpleado(event.nombreEmpleado());
@@ -14,7 +14,7 @@ public class EmpleadoChange extends EventChange {
                   empleado.documento(event.documento());
                   empleado.tipoDeEmpleado(event.tipoEmpleado());
               });
-
+*/
 
     /*
     apply((AreaAgregada event)->{

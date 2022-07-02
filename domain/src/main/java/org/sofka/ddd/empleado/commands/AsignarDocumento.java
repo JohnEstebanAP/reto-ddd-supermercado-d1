@@ -2,6 +2,7 @@ package org.sofka.ddd.empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
 import org.sofka.ddd.empleado.values.*;
+import org.sofka.ddd.empleado.values.ids.DocumentoId;
 
 public class AsignarDocumento extends Command {
     private final DocumentoId entityId;

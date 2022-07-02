@@ -1,8 +1,6 @@
 package org.sofka.ddd.producto;
 
 import co.com.sofka.domain.generic.EventChange;
-import org.sofka.ddd.empleado.Empleado;
-import org.sofka.ddd.empleado.events.EmpleadoCreado;
 
 public class ProductoChange extends EventChange {
   public ProductoChange(Producto empleado) {

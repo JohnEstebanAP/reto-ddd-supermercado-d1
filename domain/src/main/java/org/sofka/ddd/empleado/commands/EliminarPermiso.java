@@ -1,7 +1,7 @@
 package org.sofka.ddd.empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.empleado.values.PermisoId;
+import org.sofka.ddd.empleado.values.ids.PermisoId;
 import org.sofka.ddd.empleado.values.TipoPermiso;
 
 public class EliminarPermiso extends Command {

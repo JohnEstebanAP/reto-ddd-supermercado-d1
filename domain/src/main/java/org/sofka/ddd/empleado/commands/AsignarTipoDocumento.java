@@ -1,7 +1,7 @@
 package org.sofka.ddd.empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.empleado.values.DocumentoId;
+import org.sofka.ddd.empleado.values.ids.DocumentoId;
 import org.sofka.ddd.empleado.values.TipoDocumento;
 
 public class AsignarTipoDocumento extends Command {

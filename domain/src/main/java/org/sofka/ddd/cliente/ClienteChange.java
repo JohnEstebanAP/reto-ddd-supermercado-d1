@@ -2,9 +2,6 @@ package org.sofka.ddd.cliente;
 
 import co.com.sofka.domain.generic.EventChange;
 import org.sofka.ddd.cliente.events.ClienteCreado;
-import org.sofka.ddd.cliente.values.ClienteId;
-import org.sofka.ddd.empleado.Empleado;
-import org.sofka.ddd.empleado.events.EmpleadoCreado;
 
 public class ClienteChange extends EventChange {
   public ClienteChange(Cliente cliente) {

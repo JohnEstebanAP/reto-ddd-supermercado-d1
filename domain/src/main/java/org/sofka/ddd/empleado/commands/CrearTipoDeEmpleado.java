@@ -2,6 +2,7 @@ package org.sofka.ddd.empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
 import org.sofka.ddd.empleado.values.*;
+import org.sofka.ddd.empleado.values.ids.TipoDeEmpleadoId;
 
 public class CrearTipoDeEmpleado extends Command {
 

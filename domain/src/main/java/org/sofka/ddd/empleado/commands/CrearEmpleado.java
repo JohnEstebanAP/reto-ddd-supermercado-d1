@@ -1,10 +1,10 @@
 package org.sofka.ddd.empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.empleado.Documento;
-import org.sofka.ddd.empleado.Permisos;
-import org.sofka.ddd.empleado.TipoDeEmpleado;
-import org.sofka.ddd.empleado.values.EmpleadoId;
+import org.sofka.ddd.empleado.entitys.Documento;
+import org.sofka.ddd.empleado.entitys.Permisos;
+import org.sofka.ddd.empleado.entitys.TipoDeEmpleado;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import org.sofka.ddd.empleado.values.NombreEmpleado;
 import org.sofka.ddd.empleado.values.TelefonoEmpleado;
 

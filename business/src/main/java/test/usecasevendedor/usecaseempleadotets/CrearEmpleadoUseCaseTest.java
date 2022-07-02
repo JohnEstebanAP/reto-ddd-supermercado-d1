@@ -2,15 +2,14 @@ package test.usecasevendedor.usecaseempleadotets;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
-import org.sofka.ddd.empleado.Documento;
-import org.sofka.ddd.empleado.Permisos;
-import org.sofka.ddd.empleado.TipoDeEmpleado;
+import org.sofka.ddd.empleado.entitys.Documento;
+import org.sofka.ddd.empleado.entitys.Permisos;
+import org.sofka.ddd.empleado.entitys.TipoDeEmpleado;
 import org.sofka.ddd.empleado.values.*;
-import org.sofka.ddd.producto.EstadoDelProducto;
-import org.sofka.ddd.producto.Proveedor;
-import org.sofka.ddd.producto.Ubicacion;
-import org.sofka.ddd.producto.commands.AgregarProducto;
-import org.sofka.ddd.producto.values.*;
+import org.sofka.ddd.empleado.values.ids.DocumentoId;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
+import org.sofka.ddd.empleado.values.ids.PermisoId;
+import org.sofka.ddd.empleado.values.ids.TipoDeEmpleadoId;
 import org.sofka.ddd.usecaseEmpleado.CrearEmpleadoUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -20,8 +19,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.sofka.ddd.empleado.commands.CrearEmpleado;
 import org.sofka.ddd.empleado.events.EmpleadoCreado;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.Set;
 

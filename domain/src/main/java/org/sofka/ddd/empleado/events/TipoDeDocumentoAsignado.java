@@ -1,8 +1,8 @@
 package org.sofka.ddd.empleado.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.empleado.Documento;
-import org.sofka.ddd.empleado.values.EmpleadoId;
+import org.sofka.ddd.empleado.entitys.Documento;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import org.sofka.ddd.empleado.values.TipoDocumento;
 
 public class TipoDeDocumentoAsignado extends DomainEvent {

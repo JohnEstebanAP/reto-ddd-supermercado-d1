@@ -5,20 +5,14 @@ import org.sofka.ddd.empleado.entitys.TipoDeEmpleado;
 import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 
 public class TipoDeEmpleadoCreado extends DomainEvent {
-  private final EmpleadoId entityId;
   private final TipoDeEmpleado tipoDeEmpleado;
 
-  public TipoDeEmpleadoCreado(EmpleadoId entityId, TipoDeEmpleado tipoDeEmpleado) {
+  public TipoDeEmpleadoCreado(TipoDeEmpleado tipoDeEmpleado) {
     super("ddd.empleado.tipodeempleadocreado");
-    this.entityId = entityId;
     this.tipoDeEmpleado = tipoDeEmpleado;
   }
 
-  public TipoDeEmpleado tipoDeDocumento() {
+  public TipoDeEmpleado tipoDeEmpleado() {
     return tipoDeEmpleado;
-  }
-
-  public EmpleadoId empleadoId() {
-    return entityId;
   }
 }

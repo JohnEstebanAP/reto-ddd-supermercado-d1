@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de AsignarPermisoUseCaseTest, Pasa el tets:)" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de AsignarPermisoUseCaseTest, Pasa el tets:)">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearTipoDeEmpleadoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/CrearTipoDeEmpleadoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearTipoDeEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearTipoDeEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/PermisoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/PermisoEliminado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeEmpleadoCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeEmpleadoCreado.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,14 +66,14 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="test.usecasevendedor.usecaseempleadotets" />
       <recent name="org.sofka.ddd.usecaseEmpleado" />
+      <recent name="test.usecasevendedor.usecaseempleadotets" />
       <recent name="org.sofka.ddd.factura.events" />
       <recent name="org.sofka.ddd.factura" />
       <recent name="test.usecasevendedor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AsignarPermisoUseCaseTest">
+  <component name="RunManager" selected="JUnit.CrearTipoDeEmpleadoUseCaseTest">
     <configuration name="ActualizarNombreUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
@@ -92,22 +100,6 @@
       <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
       <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarNombreUseCaseTest" />
       <option name="METHOD_NAME" value="cuandoSeActualizaunNombreDelVendedor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActualizarNombreUseCaseTest.cuandoSeCreaUnVendedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarNombreUseCaseTest" />
-      <option name="METHOD_NAME" value="cuandoSeCreaUnVendedor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,13 +135,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CrearTipoDeEmpleadoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.CrearTipoDeEmpleadoUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CrearTipoDeEmpleadoUseCaseTest" />
         <item itemvalue="JUnit.AsignarPermisoUseCaseTest" />
         <item itemvalue="JUnit.ActualizarTelefonoUseCaseTest" />
         <item itemvalue="JUnit.ActualizarNombreUseCaseTest.cuandoSeActualizaunNombreDelVendedor" />
         <item itemvalue="JUnit.ActualizarNombreUseCaseTest" />
-        <item itemvalue="JUnit.ActualizarNombreUseCaseTest.cuandoSeCreaUnVendedor" />
       </list>
     </recent_temporary>
   </component>
@@ -365,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656794405903</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Tets de AsignarPermisoUseCaseTest, Pasa el tets:)">
+      <created>1656794550127</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1656794550127</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

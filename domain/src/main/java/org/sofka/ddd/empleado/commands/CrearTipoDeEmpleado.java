@@ -1,24 +1,26 @@
 package org.sofka.ddd.empleado.commands;
 
 import co.com.sofka.domain.generic.Command;
-import org.sofka.ddd.empleado.values.*;
-import org.sofka.ddd.empleado.values.ids.TipoDeEmpleadoId;
+import org.sofka.ddd.empleado.entitys.TipoDeEmpleado;
+import org.sofka.ddd.empleado.values.TipoEmpleado;
+import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 
 public class CrearTipoDeEmpleado extends Command {
 
-    private final TipoDeEmpleadoId entityId;
-    private final TipoEmpleado tipoEmpleado;
+  private final EmpleadoId entityId;
+  private final TipoDeEmpleado tipoDeEmpleado;
 
-    public CrearTipoDeEmpleado(TipoDeEmpleadoId entityId, TipoEmpleado tipoEmpleado) {
-        this.entityId = entityId;
-        this.tipoEmpleado = tipoEmpleado;
-    }
+  public CrearTipoDeEmpleado(
+      EmpleadoId entityId, TipoDeEmpleado tipoDeEmpleado) {
+    this.entityId = entityId;
+    this.tipoDeEmpleado = tipoDeEmpleado;
+  }
 
-    public TipoDeEmpleadoId entityId() {
-        return entityId;
-    }
+  public EmpleadoId entityId() {
+    return entityId;
+  }
 
-    public TipoEmpleado tipoEmpleado() {
-        return tipoEmpleado;
-    }
+  public TipoDeEmpleado tipoDeEmpleado() {
+    return tipoDeEmpleado;
+  }
 }

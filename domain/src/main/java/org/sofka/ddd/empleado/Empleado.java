@@ -8,6 +8,7 @@ import org.sofka.ddd.empleado.entitys.TipoDeEmpleado;
 import org.sofka.ddd.empleado.events.*;
 import org.sofka.ddd.empleado.values.*;
 import org.sofka.ddd.empleado.values.ids.EmpleadoId;
+import org.sofka.ddd.empleado.values.ids.PermisoId;
 
 import java.util.List;
 import java.util.Objects;
@@ -21,8 +22,13 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
   protected Documento documento;
   protected TipoDeEmpleado tipoDeEmpleado;
 
-
-  public Empleado(EmpleadoId entityId, NombreEmpleado nombreEmpleado, TelefonoEmpleado telefonoEmpleado, Set<Permisos> permisos, Documento documento, TipoDeEmpleado tipoDeEmpleado) {
+  public Empleado(
+      EmpleadoId entityId,
+      NombreEmpleado nombreEmpleado,
+      TelefonoEmpleado telefonoEmpleado,
+      Set<Permisos> permisos,
+      Documento documento,
+      TipoDeEmpleado tipoDeEmpleado) {
     super(entityId);
     this.nombreEmpleado = nombreEmpleado;
     this.telefonoEmpleado = telefonoEmpleado;
@@ -30,7 +36,10 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
     this.documento = documento;
     this.tipoDeEmpleado = tipoDeEmpleado;
 
-    appendChange(new EmpleadoCreado(entityId, nombreEmpleado, telefonoEmpleado, permisos, documento, tipoDeEmpleado)).apply();
+    appendChange(
+            new EmpleadoCreado(
+                entityId, nombreEmpleado, telefonoEmpleado, permisos, documento, tipoDeEmpleado))
+        .apply();
   }
 
   private Empleado(EmpleadoId entityId) {
@@ -59,10 +68,9 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
     appendChange(new PermisoAsignado(permisos)).apply();
   }
 
-  public void eliminarPermiso(EmpleadoId entityId, Set<Permisos> permisos) {
-    Objects.requireNonNull(entityId);
-    Objects.requireNonNull(permisos);
-    appendChange(new PermisoEliminado(entityId, permisos)).apply();
+  public void eliminarPermiso(PermisoId permisoId) {
+    Objects.requireNonNull(permisoId);
+    appendChange(new PermisoEliminado(permisoId)).apply();
   }
 
   public void actualizarPermiso(EmpleadoId entityId, Set<Permisos> permisos) {
@@ -93,10 +101,9 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
     appendChange(new TipoDeDocumentoAsignado(entityId, documento, tipoDocumento)).apply();
   }
 
-  public void crearTipoDeEmpleado(EmpleadoId entityId, TipoDeEmpleado tipoDeEmpleado) {
-    Objects.requireNonNull(entityId);
+  public void crearTipoDeEmpleado(TipoDeEmpleado tipoDeEmpleado) {
     Objects.requireNonNull(tipoDeEmpleado);
-    appendChange(new TipoDeEmpleadoCreado(entityId, tipoDeEmpleado)).apply();
+    appendChange(new TipoDeEmpleadoCreado(tipoDeEmpleado)).apply();
   }
 
   public void eliminarTipoDeEmpleado(EmpleadoId entityId) {
@@ -110,20 +117,11 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
     appendChange(new TipoDeEmpleadoActualizado(entityId, tipoDeEmpleado)).apply();
   }
 
-  /*
-    protected Optional<Calificacion> getCalificacionPorId(CalificacionId calificacionId) {
-        return calificaciones()
-                .stream()
-                .filter(calificacion -> calificacion.identity().equals(calificacionId))
-                .findFirst();
-    }
-  */
-
   public NombreEmpleado nombreEmpleado() {
     return nombreEmpleado;
   }
 
-  public TelefonoEmpleado telefonoEmpleado(){
+  public TelefonoEmpleado telefonoEmpleado() {
     return telefonoEmpleado;
   }
 

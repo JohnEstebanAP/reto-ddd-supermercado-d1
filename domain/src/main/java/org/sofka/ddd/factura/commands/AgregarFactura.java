@@ -1,6 +1,7 @@
 package org.sofka.ddd.factura.commands;
 
 import co.com.sofka.domain.generic.Command;
+import org.sofka.ddd.cliente.values.ClienteId;
 import org.sofka.ddd.factura.values.FacturaId;
 
 public class AgregarFactura extends Command {

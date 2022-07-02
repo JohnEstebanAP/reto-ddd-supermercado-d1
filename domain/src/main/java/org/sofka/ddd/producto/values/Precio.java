@@ -8,10 +8,10 @@ public class Precio implements ValueObject<Double> {
 
     private final Double precio;
 
-    public Precio(Double precio) throws IllegalAccessException {
+    public Precio(Double precio) {
         this.precio = Objects.requireNonNull(precio);
         if(precio <= 0 ){
-            throw new IllegalAccessException("El precio debe ser mayor que cero");
+            throw new IllegalArgumentException("El precio debe ser mayor que cero");
         }
     }
 

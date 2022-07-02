@@ -6,24 +6,24 @@ import java.util.Objects;
 
 public class EstadoProducto implements ValueObject<String> {
 
-    private enum TiposEmpleado{ JEFE_DE_VENTAS, JEFE_DE_ZONA, SUPERVISOR, SUPERVISOR_SEGUNDO, SUPERVISOR_TERCERO, ASISTENTE_DE_VETAS};
+    private enum EstadosProducto{ ALFRENTE , PROMOCION ,DESCUENTO };
 
-    TiposEmpleado tipoEmpleado;
+     EstadosProducto estadoProducto;
 
-    public EstadoProducto(String tipoEmpleado) {
+    public EstadoProducto(String estadoProducto) {
         try{
-            if (tipoEmpleado.isEmpty()) {
+            if (estadoProducto.isEmpty()) {
                 throw new IllegalArgumentException("El tipo de empleado no puede estar vació");
             }
 
-            this.tipoEmpleado = Enum.valueOf(TiposEmpleado.class , tipoEmpleado) ;
+            this.estadoProducto = Enum.valueOf(EstadosProducto.class , estadoProducto) ;
         }catch(Exception e){
             throw new IllegalArgumentException(e.getMessage());
         }
     }
 
     public String value() {
-        return tipoEmpleado.name();
+        return estadoProducto.name();
     }
 
     @Override
@@ -31,7 +31,7 @@ public class EstadoProducto implements ValueObject<String> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         EstadoProducto that = (EstadoProducto) o;
-        return Objects.equals(tipoEmpleado, that.tipoEmpleado);
+        return Objects.equals(estadoProducto, that.estadoProducto);
     }
 
 }

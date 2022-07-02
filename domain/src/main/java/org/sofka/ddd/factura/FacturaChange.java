@@ -1,7 +1,6 @@
 package org.sofka.ddd.factura;
 
 import co.com.sofka.domain.generic.EventChange;
-import org.sofka.ddd.cliente.ClienteAgregado;
 import org.sofka.ddd.cliente.NombreDeUnClienteActualizado;
 import org.sofka.ddd.factura.events.FacturaAgregada;
 import org.sofka.ddd.factura.events.FechaDeUnaFacturaCambiada;
@@ -10,7 +9,7 @@ import org.sofka.ddd.factura.events.*;
 
 public class FacturaChange extends EventChange {
   public FacturaChange(Factura factura) {
-
+/*
     apply(
         (ClienteAgregado event) -> {
           factura.cliente = event.getCliente();
@@ -37,6 +36,6 @@ public class FacturaChange extends EventChange {
 
     apply((TipoDeUnaClasificacionCambiada event) -> {});
 
-    apply((FechaDeUnaFacturaCambiada event) -> {});
+    apply((FechaDeUnaFacturaCambiada event) -> {});*/
   }
 }

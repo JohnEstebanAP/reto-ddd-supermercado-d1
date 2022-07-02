@@ -14,7 +14,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 @ExtendWith(MockitoExtension.class)
 public class CrearFacturaUseCaseTest {
-
+/*
   @InjectMocks CrearFacturaUseCase useCase;
 
   @Test
@@ -34,5 +34,5 @@ public class CrearFacturaUseCaseTest {
     // assert
     var event = (FacturaAgregada) events.get(0);
     Assertions.assertEquals("1017", event.getEntityId().value());
-  }
+  }*/
 }

@@ -1,6 +1,8 @@
 package org.sofka.ddd.factura.commands;
 
 import co.com.sofka.domain.generic.Command;
+import org.sofka.ddd.cliente.values.ClienteId;
+import org.sofka.ddd.cliente.values.NombreCliente;
 import org.sofka.ddd.factura.values.FacturaId;
 
 public class ActualizarNombreDeUnCliente extends Command {
@@ -16,15 +18,15 @@ public class ActualizarNombreDeUnCliente extends Command {
         this.nombreCliente = nombreCliente;
     }
 
-    public FacturaId getFacturaId() {
+    public FacturaId facturaId() {
         return facturaId;
     }
 
-    public ClienteId getClienteId() {
+    public ClienteId clienteId() {
         return clienteId;
     }
 
-    public NombreCliente getNombreCliente() {
+    public NombreCliente nombreCliente() {
         return nombreCliente;
     }
 }

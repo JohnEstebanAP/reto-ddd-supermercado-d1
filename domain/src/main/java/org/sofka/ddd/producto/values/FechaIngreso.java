@@ -12,12 +12,12 @@ public class FechaIngreso implements ValueObject<String> {
     private final LocalDate date;
     private final String format;
 
-    public FechaIngreso(int day, int month, int year) {
+    public FechaIngreso(LocalDate date) {
         try {
-            date = LocalDate.of(year, month, day);
             if (date.isAfter(LocalDate.now())) {
                 throw new IllegalArgumentException("No es válida la fecha");
             }
+            this.date = date;
         } catch (DateTimeException e) {
             throw new IllegalArgumentException(e.getMessage());
         }

@@ -9,10 +9,10 @@ import org.sofka.ddd.factura.commands.AgregarFactura;
 public class CrearFacturaUseCase extends UseCase<RequestCommand<AgregarFactura>, ResponseEvents> {
   @Override
   public void executeUseCase(RequestCommand<AgregarFactura> AgregarFacturaRequest) {
-    var command = AgregarFacturaRequest.getCommand();
+  /*  var command = AgregarFacturaRequest.getCommand();
     var factura = new Factura(
             command.getEntityId(),
             command.getClienteId());
-    emit().onResponse(new ResponseEvents(factura.getUncommittedChanges()));
+    emit().onResponse(new ResponseEvents(factura.getUncommittedChanges()));*/
   }
 }

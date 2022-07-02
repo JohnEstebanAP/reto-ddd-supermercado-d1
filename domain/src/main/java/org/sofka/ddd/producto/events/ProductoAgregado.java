@@ -1,20 +1,12 @@
 package org.sofka.ddd.producto.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.empleado.Documento;
-import org.sofka.ddd.empleado.Permisos;
-import org.sofka.ddd.empleado.TipoDeEmpleado;
-import org.sofka.ddd.empleado.values.EmpleadoId;
-import org.sofka.ddd.empleado.values.NombreEmpleado;
-import org.sofka.ddd.empleado.values.TelefonoEmpleado;
 import org.sofka.ddd.producto.EstadoDelProducto;
 import org.sofka.ddd.producto.Proveedor;
 import org.sofka.ddd.producto.Ubicacion;
 import org.sofka.ddd.producto.values.*;
 
-import java.util.Set;
-
-public class productoAgregado extends DomainEvent {
+public class ProductoAgregado extends DomainEvent {
 
     private final ProductoId productoId;
     private final Ubicacion ubicacion;
@@ -29,7 +21,7 @@ public class productoAgregado extends DomainEvent {
     private final FechaIngreso fechaIngreso;
     private final Precio precio;
 
-    public productoAgregado(ProductoId entityId, Ubicacion ubicacion, Proveedor proveedor, EstadoDelProducto estadoDelProducto, NombreProducto nombreProducto, NombreMarca nombreMarca, Stock stock, FechaProducto fechaProducto, FechaCaducidad fechaCaducidad, FechaIngreso fechaIngreso, Precio precio) {
+    public ProductoAgregado(ProductoId entityId, Ubicacion ubicacion, Proveedor proveedor, EstadoDelProducto estadoDelProducto, NombreProducto nombreProducto, NombreMarca nombreMarca, Stock stock, FechaProducto fechaProducto, FechaCaducidad fechaCaducidad, FechaIngreso fechaIngreso, Precio precio) {
         super("ddd.producto.productoagregado");
         this.productoId = entityId;
         this.ubicacion = ubicacion;

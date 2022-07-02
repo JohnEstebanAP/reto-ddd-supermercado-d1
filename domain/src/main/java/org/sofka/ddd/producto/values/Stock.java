@@ -4,23 +4,23 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Stock implements ValueObject<Double> {
+public class Stock implements ValueObject<Integer> {
 
-    private final Double cantidad;
+    private final Integer cantidad;
 
-    public Stock(Double cantidad) throws IllegalAccessException {
+    public Stock(Integer cantidad) {
         this.cantidad = Objects.requireNonNull(cantidad);
         if(cantidad < 0 ){
-            throw new IllegalAccessException("El stock no puede ser inferior a cero");
+            throw new IllegalArgumentException("El stock no puede ser inferior a cero");
         }
     }
 
-    public Stock cambiarStock( Double cantidad ) throws IllegalAccessException {
+    public Stock cambiarStock( Integer cantidad ) {
         return new Stock(cantidad);
     }
 
     @Override
-    public Double value() {
+    public Integer value() {
         return cantidad;
     }
 }

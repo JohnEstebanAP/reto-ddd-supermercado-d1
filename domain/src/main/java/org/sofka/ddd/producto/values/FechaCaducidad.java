@@ -15,8 +15,8 @@ public class FechaCaducidad implements ValueObject<String> {
     public FechaCaducidad(int day, int month, int year) {
         try {
             date = LocalDate.of(year, month, day);
-            if (date.isAfter(LocalDate.now())) {
-                throw new IllegalArgumentException("No es válida la fecha");
+            if (date.isBefore(LocalDate.now())) {
+                throw new IllegalArgumentException("No es válida la fecha o El producto ya esta caducado");
             }
         } catch (DateTimeException e) {
             throw new IllegalArgumentException(e.getMessage());

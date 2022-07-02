@@ -6,24 +6,24 @@ import java.util.Objects;
 
 public class Caducidad implements ValueObject<String> {
 
-    private enum TiposEmpleado{ JEFE_DE_VENTAS, JEFE_DE_ZONA, SUPERVISOR, SUPERVISOR_SEGUNDO, SUPERVISOR_TERCERO, ASISTENTE_DE_VETAS};
+    private enum TiposCaducidad{ OPTIMO, PROXIMO_A_VENCER, VENCIDO};
 
-    TiposEmpleado tipoEmpleado;
+    TiposCaducidad caducidad;
 
-    public Caducidad(String tipoEmpleado) {
+    public Caducidad(String caducidad) {
         try{
-            if (tipoEmpleado.isEmpty()) {
+            if (caducidad.isEmpty()) {
                 throw new IllegalArgumentException("El tipo de empleado no puede estar vació");
             }
 
-            this.tipoEmpleado = Enum.valueOf(TiposEmpleado.class , tipoEmpleado) ;
+            this.caducidad = Enum.valueOf(TiposCaducidad.class , caducidad) ;
         }catch(Exception e){
             throw new IllegalArgumentException(e.getMessage());
         }
     }
 
     public String value() {
-        return tipoEmpleado.name();
+        return caducidad.name();
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Caducidad implements ValueObject<String> {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Caducidad that = (Caducidad) o;
-        return Objects.equals(tipoEmpleado, that.tipoEmpleado);
+        return Objects.equals(caducidad, that.caducidad);
     }
 
 }

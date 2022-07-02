@@ -46,10 +46,9 @@ public class Empleado extends AggregateEvent<EmpleadoId> {
     appendChange(new EmpleadoInicializado(entityId)).apply();
   }
 
-  public void actualizarNombre(EmpleadoId entityId, NombreEmpleado nombre) {
-    Objects.requireNonNull(entityId);
+  public void actualizarNombre(NombreEmpleado nombre) {
     Objects.requireNonNull(nombre);
-    appendChange(new NombreActualizado(entityId, nombre)).apply();
+    appendChange(new NombreActualizado(nombre)).apply();
   }
 
   public void actualizarTelefono(EmpleadoId entityId, TelefonoEmpleado telefonoEmpleado) {

@@ -4,40 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="eventos faltantes del [AR] Factura">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/EstadoFacturaCambiado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FechaDelaTransaccionCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/000b0f65c6a8ef235ff5b54b8711efd88efcccd8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/3/0337a5eb1a64d226f3dfc96a71444b0ba8217406" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/121314007849c9d17b21e811d472d357f06ffd49" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/2259da4a9b276e668d87ff318c3125c517959287" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/b/2baa0cdb29f79e2d755a24fb592872dc45d4f2ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/0/307c3efb8db97bbf322752a59bb58da4f5d2884b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/42a891c1a41254c87f36d6a1ec993f2c79655b1b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/6/46d4044ca5ee0739d60b825b13b834839f402bc2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/a/4a1dce42cab090c579e2c25e667ace8326d7c714" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/4/6423ea3a926db17193035c51e89da6a6219c65b4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/5/65d02d81c57fb51d0ddc6799f4fe5ec6fd4cebd2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/8134e8bb6ffc9a3c221379fa5ade7540494346c6" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84c6c83aeeab4ebc2e6f0d17b1b5f6df52c25f3a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/4/84e0802dfc8fb76495a3f1c613d94f47321d50dd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/888876930a9b46804e0ac56cb96756364b282fed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/0/903aa27a10ce0de8b9dd93375b6d7a75b5b0856b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/5/a57268c2d1a0efae30e32882a9c5611f3982615d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a68675917221ee5150bf284a18a19b2787eca50e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b843c8a28d73318cb5a81a8a0dcd0cb387be1348" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b8c66f87fea2596dfa819a75143093c971b27844" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c4b1fc64ecfcf47f9b649ad2a8c608ee4df7fe68" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/6/c6f4e281f4bb68e3eb4ddac2fbd59dfb5dcd747c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/7/d74f4c10279c1d58aa2578a59a5d46652bd24418" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da4971d2313be4247482003938b4d3274a54314d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/deb79f8d5fcbdae4f1b3c99b453d7f0332494dcd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/e/eea82d6cb3ba2467c78c4e3efe4507236e258956" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6971f27693af0d52d0917859cea5383ff2ce4ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de ActualizarNombreUseCaseTest, Pasa es tets:)">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/ActualizarNombreUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/ActualizarNombreUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/TotalPagoCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/TotalPagoCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearEmpleadoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/CrearEmpleadoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CambiarNombre.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/ActualizarNombre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/NombreActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/NombreActualizado.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,40 +66,56 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.usecasevendedor.usecaseempleadotets" />
+      <recent name="org.sofka.ddd.usecaseEmpleado" />
       <recent name="org.sofka.ddd.factura.events" />
       <recent name="org.sofka.ddd.factura" />
       <recent name="test.usecasevendedor" />
-      <recent name="org.sofka.ddd.cliente.commands" />
-      <recent name="org.sofka.ddd.usucaseCliente" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CrearFacturaUseCaseTest">
-    <configuration name="AgregarProductoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ActualizarNombreUseCaseTest.cuandoSeActualizaunNombreDelVendedor">
+    <configuration name="ActualizarNombreUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.AgregarProductoUseCaseTest" />
+      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarNombreUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AgregarProductoUseCaseTest.cuandoSeAgregaUnproducto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ActualizarNombreUseCaseTest.cuandoSeActualizaunNombreDelVendedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.AgregarProductoUseCaseTest" />
-      <option name="METHOD_NAME" value="cuandoSeAgregaUnproducto" />
+      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarNombreUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeActualizaunNombreDelVendedor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActualizarNombreUseCaseTest.cuandoSeCreaUnVendedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarNombreUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeCreaUnVendedor" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -135,7 +125,7 @@
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,26 +136,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CrearEmpleadoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.usecasevendedor" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.CrearEmpleadoUseCaseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CrearFacturaUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.*" />
+          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -178,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActualizarNombreUseCaseTest.cuandoSeActualizaunNombreDelVendedor" />
+        <item itemvalue="JUnit.ActualizarNombreUseCaseTest" />
+        <item itemvalue="JUnit.ActualizarNombreUseCaseTest.cuandoSeCreaUnVendedor" />
         <item itemvalue="JUnit.CrearFacturaUseCaseTest" />
         <item itemvalue="JUnit.CrearClienteUseCaseTest" />
-        <item itemvalue="JUnit.AgregarProductoUseCaseTest" />
-        <item itemvalue="JUnit.AgregarProductoUseCaseTest.cuandoSeAgregaUnproducto" />
-        <item itemvalue="JUnit.CrearEmpleadoUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -363,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656736961618</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="eventos faltantes del [AR] Factura">
+      <created>1656783175992</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1656783175992</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -394,7 +376,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Primer caso de uso (Crear Una Factura) pasa las pruebas unitarias 2" />
     <MESSAGE value="pruebas unitarias para crear un cliente (falla)" />
     <MESSAGE value="union de todo el trabajo" />
     <MESSAGE value="configuración de los archivos pom.xml" />
@@ -419,7 +400,8 @@
     <MESSAGE value="CrearClienteUseCaseTest para él [AR] Cliente  :)" />
     <MESSAGE value="CrearFacturaUseCaseTest :)" />
     <MESSAGE value="eventos faltantes del [AR] Factura" />
-    <option name="LAST_COMMIT_MESSAGE" value="eventos faltantes del [AR] Factura" />
+    <MESSAGE value="Tets de ActualizarNombreUseCaseTest, Pasa es tets:)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tets de ActualizarNombreUseCaseTest, Pasa es tets:)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -438,6 +420,11 @@
           <url>file://$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearEmpleadoUseCase.java</url>
           <line>12</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/ActualizarNombreUseCaseTest.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

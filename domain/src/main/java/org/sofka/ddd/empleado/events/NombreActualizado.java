@@ -5,21 +5,15 @@ import org.sofka.ddd.empleado.values.EmpleadoId;
 import org.sofka.ddd.empleado.values.NombreEmpleado;
 
 public class NombreActualizado extends DomainEvent {
-    private final EmpleadoId entityId;
     private final NombreEmpleado nombre;
 
 
-    public NombreActualizado(EmpleadoId entityId, NombreEmpleado nombre) {
+    public NombreActualizado(NombreEmpleado nombre) {
         super("ddd.empleado.nombreactualizado");
-        this.entityId = entityId;
         this.nombre = nombre;
     }
 
-    public NombreEmpleado nombreEmpleado() {
-        return nombre;
-    }
-
-    public EmpleadoId empleadoId() {
-        return entityId;
+    public String nombreEmpleado() {
+        return nombre.value();
     }
 }

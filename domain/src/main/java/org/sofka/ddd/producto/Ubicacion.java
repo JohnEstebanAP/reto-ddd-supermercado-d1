@@ -16,6 +16,14 @@ public class Ubicacion extends Entity<UbicacionId> {
     Pasillo = pasillo;
   }
 
+  public Estanteria estanteria() {
+    return estanteria;
+  }
+
+  public Pasillo pasillo() {
+    return Pasillo;
+  }
+
   public void actualizarEstanteria(Estanteria estanteria) {
     this.estanteria = estanteria;
   }

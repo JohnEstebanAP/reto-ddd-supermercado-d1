@@ -14,36 +14,36 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.sofka.ddd.producto.EstadoDelProducto;
 import org.sofka.ddd.producto.Proveedor;
 import org.sofka.ddd.producto.Ubicacion;
-import org.sofka.ddd.producto.commands.ActualizarUbicacion;
+import org.sofka.ddd.producto.commands.ActualizarEstanteria;
+import org.sofka.ddd.producto.events.EstanteriaActualizada;
 import org.sofka.ddd.producto.events.ProductoAgregado;
-import org.sofka.ddd.producto.events.UbicacionActualizada;
 import org.sofka.ddd.producto.values.*;
-import org.sofka.ddd.usecaseproducto.ActualizarUbicacionUseCase;
+import org.sofka.ddd.usecaseproducto.ActualizarEstanteriaUseCase;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
-public class ActualizarUbicacionUseCaseTest {
+public class ActualizarestanteriaUseCaseTest {
 
   @InjectMocks
-  ActualizarUbicacionUseCase useCase;
+  ActualizarEstanteriaUseCase useCase;
 
   @Mock
   private DomainEventRepository repository;
 
   @Test
-  public void cuandoSeActualizaLaUbicacionDeUnProducto() {
+  public void cuandoSeActualizaLaEstanteriaDeUnProducto() {
 
     // arrange
     ProductoId productoId = ProductoId.of("2");
 
     UbicacionId ubicacionId = UbicacionId.of("1");
-    Estanteria estanteria = new Estanteria("14");
-    Pasillo pasillo = new Pasillo("A2");
+    Estanteria estanteria = new Estanteria("23");
+    Pasillo pasillo = new Pasillo("A1");
     Ubicacion ubicacion = new Ubicacion(ubicacionId, estanteria, pasillo);
 
-    var command = new ActualizarUbicacion(productoId, ubicacion);
+    var command = new ActualizarEstanteria(productoId, ubicacion, estanteria);
 
     Mockito.when(repository.getEventsBy(productoId.value())).thenReturn(historial());
     useCase.addRepository(repository);
@@ -57,10 +57,10 @@ public class ActualizarUbicacionUseCaseTest {
                     .getDomainEvents();
 
     // assert
-    var event = (UbicacionActualizada) events.get(0);
+    var event = (EstanteriaActualizada) events.get(0);
     Assertions.assertEquals("1", event.ubicacion().identity().value());
-    Assertions.assertEquals("A2", event.ubicacion().pasillo().value());
-    Assertions.assertEquals("14", event.ubicacion().estanteria().value());
+    Assertions.assertEquals("A1", event.ubicacion().pasillo().value());
+    Assertions.assertEquals("23", event.ubicacion().estanteria().value());
   }
 
 

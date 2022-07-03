@@ -4,10 +4,7 @@ import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import org.sofka.ddd.empleado.events.NombreActualizado;
 import org.sofka.ddd.empleado.values.NombreEmpleado;
-import org.sofka.ddd.producto.events.ProductoActualizado;
-import org.sofka.ddd.producto.events.ProductoAgregado;
-import org.sofka.ddd.producto.events.ProductoEliminado;
-import org.sofka.ddd.producto.events.UbicacionActualizada;
+import org.sofka.ddd.producto.events.*;
 import org.sofka.ddd.producto.values.*;
 
 import java.util.List;
@@ -67,6 +64,12 @@ public class Producto extends AggregateEvent<ProductoId> {
     public void actualizarUbicacion(Ubicacion ubicacion) {
         Objects.requireNonNull(ubicacion);
         appendChange(new UbicacionActualizada(ubicacion)).apply();
+    }
+
+    public void actualizarEstanteria(Ubicacion ubicacion, Estanteria estanteria) {
+        Objects.requireNonNull(ubicacion);
+        Objects.requireNonNull(estanteria);
+        appendChange(new EstanteriaActualizada(ubicacion, estanteria)).apply();
     }
 
 

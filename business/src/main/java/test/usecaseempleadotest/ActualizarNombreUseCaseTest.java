@@ -1,4 +1,4 @@
-package test.usecasevendedor.usecaseempleadotets;
+package test.usecaseempleadotest;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;

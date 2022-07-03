@@ -1,4 +1,4 @@
-package test.usecasevendedor.usecaseempleadotets;
+package test.usecaseempleadotest;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
@@ -11,20 +11,17 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.sofka.ddd.empleado.commands.ActualizarTelefono;
 import org.sofka.ddd.empleado.commands.AsignarPermiso;
 import org.sofka.ddd.empleado.entitys.Documento;
 import org.sofka.ddd.empleado.entitys.Permisos;
 import org.sofka.ddd.empleado.entitys.TipoDeEmpleado;
 import org.sofka.ddd.empleado.events.EmpleadoCreado;
 import org.sofka.ddd.empleado.events.PermisoAsignado;
-import org.sofka.ddd.empleado.events.TelefonoActualizado;
 import org.sofka.ddd.empleado.values.*;
 import org.sofka.ddd.empleado.values.ids.DocumentoId;
 import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import org.sofka.ddd.empleado.values.ids.PermisoId;
 import org.sofka.ddd.empleado.values.ids.TipoDeEmpleadoId;
-import org.sofka.ddd.usecaseEmpleado.ActualizarTelefonoUseCase;
 import org.sofka.ddd.usecaseEmpleado.AsignarPermisoUseCase;
 
 import java.util.HashSet;

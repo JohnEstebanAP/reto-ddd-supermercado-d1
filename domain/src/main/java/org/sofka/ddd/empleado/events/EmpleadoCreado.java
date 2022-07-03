@@ -8,6 +8,7 @@ import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import org.sofka.ddd.empleado.values.NombreEmpleado;
 import org.sofka.ddd.empleado.values.TelefonoEmpleado;
 
+import java.util.Objects;
 import java.util.Set;
 
 public class EmpleadoCreado extends DomainEvent {
@@ -20,6 +21,9 @@ public class EmpleadoCreado extends DomainEvent {
 
     public EmpleadoCreado(EmpleadoId entityId, NombreEmpleado nombreEmpleado, TelefonoEmpleado telefonoEmpleado, Set<Permisos> permisos, Documento documento, TipoDeEmpleado tipoEmpleado) {
         super("ddd.empleado.empleadocreado");
+
+        Objects.requireNonNull(entityId);
+
         this.entityId = entityId;
         this.nombreEmpleado = nombreEmpleado;
         this.telefonoEmpleado = telefonoEmpleado;

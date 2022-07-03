@@ -4,14 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de AsignarPermisoUseCaseTest, Pasa el tets:)">
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseEmpleado/CrearTipoDeEmpleadoUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/CrearTipoDeEmpleadoUseCaseTest.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de CrearTipoDeEmpleadoUseCase, Pasa el tets:)">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseproducto/ActualizarProductoUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarProducto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/ProductoActualizado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/Empleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearTipoDeEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearTipoDeEmpleado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/PermisoEliminado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/PermisoEliminado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeEmpleadoCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/TipoDeEmpleadoCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/AgregarProductoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/AgregarProductoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearClienteUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/CrearClienteUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/CrearFacturaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/CrearFacturaUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/ActualizarNombreUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseempleadotest/ActualizarNombreUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/ActualizarTelefonoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseempleadotest/ActualizarTelefonoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/AsignarPermisoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseempleadotest/AsignarPermisoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/CrearEmpleadoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseempleadotest/CrearEmpleadoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecasevendedor/usecaseempleadotets/CrearTipoDeEmpleadoUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseempleadotest/CrearTipoDeEmpleadoUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/commands/CrearEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/EmpleadoCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/empleado/events/EmpleadoCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,61 +74,61 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.usecaseproductotest" />
+      <recent name="org.sofka.ddd.usecaseproducto" />
+      <recent name="org.sofka.ddd.producto.commands" />
+      <recent name="org.sofka.ddd.producto.events" />
       <recent name="org.sofka.ddd.usecaseEmpleado" />
-      <recent name="test.usecasevendedor.usecaseempleadotets" />
-      <recent name="org.sofka.ddd.factura.events" />
-      <recent name="org.sofka.ddd.factura" />
-      <recent name="test.usecasevendedor" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CrearTipoDeEmpleadoUseCaseTest">
-    <configuration name="ActualizarNombreUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ActualizarProductoUseCaseTest">
+    <configuration name="ActualizarProductoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
+          <option name="PATTERN" value="test.usecaseproductotest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarNombreUseCaseTest" />
+      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarProductoUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActualizarNombreUseCaseTest.cuandoSeActualizaunNombreDelVendedor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ActualizarProductoUseCaseTest.cuandoSeAgregaUnproducto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
+          <option name="PATTERN" value="test.usecaseproductotest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarNombreUseCaseTest" />
-      <option name="METHOD_NAME" value="cuandoSeActualizaunNombreDelVendedor" />
+      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarProductoUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeAgregaUnproducto" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActualizarTelefonoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AgregarProductoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecasevendedor.usecaseempleadotets.*" />
+          <option name="PATTERN" value="test.usecaseproductotest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.ActualizarTelefonoUseCaseTest" />
+      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.AgregarProductoUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AsignarPermisoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CrearEmpleadoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
@@ -129,7 +137,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.usecasevendedor.usecaseempleadotets" />
-      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.AsignarPermisoUseCaseTest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecasevendedor.usecaseempleadotets.CrearEmpleadoUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ActualizarProductoUseCaseTest" />
+        <item itemvalue="JUnit.ActualizarProductoUseCaseTest.cuandoSeAgregaUnproducto" />
+        <item itemvalue="JUnit.AgregarProductoUseCaseTest" />
         <item itemvalue="JUnit.CrearTipoDeEmpleadoUseCaseTest" />
-        <item itemvalue="JUnit.AsignarPermisoUseCaseTest" />
-        <item itemvalue="JUnit.ActualizarTelefonoUseCaseTest" />
-        <item itemvalue="JUnit.ActualizarNombreUseCaseTest.cuandoSeActualizaunNombreDelVendedor" />
-        <item itemvalue="JUnit.ActualizarNombreUseCaseTest" />
+        <item itemvalue="JUnit.CrearEmpleadoUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -379,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656794550127</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Tets de CrearTipoDeEmpleadoUseCase, Pasa el tets:)">
+      <created>1656804680638</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1656804680638</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -410,7 +425,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="configuración de los archivos pom.xml" />
     <MESSAGE value="se agregaron los value objects de la [AR]Empleado" />
     <MESSAGE value="se agregaron los value objects de la [AR]Empleado y so entidad Permisos" />
     <MESSAGE value="se agregaron las entidades de la [AR]Empleado" />
@@ -435,7 +449,8 @@
     <MESSAGE value="Tets de ActualizarNombreUseCaseTest, Pasa es tets:)" />
     <MESSAGE value="Tets de ActualizarTelefonoUseCaseTest, Pasa el tets:)" />
     <MESSAGE value="Tets de AsignarPermisoUseCaseTest, Pasa el tets:)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tets de AsignarPermisoUseCaseTest, Pasa el tets:)" />
+    <MESSAGE value="Tets de CrearTipoDeEmpleadoUseCase, Pasa el tets:)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tets de CrearTipoDeEmpleadoUseCase, Pasa el tets:)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

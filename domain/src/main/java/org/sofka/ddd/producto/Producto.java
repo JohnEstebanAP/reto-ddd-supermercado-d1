@@ -2,10 +2,14 @@ package org.sofka.ddd.producto;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
+import org.sofka.ddd.empleado.events.NombreActualizado;
+import org.sofka.ddd.empleado.values.NombreEmpleado;
+import org.sofka.ddd.producto.events.ProductoActualizado;
 import org.sofka.ddd.producto.events.ProductoAgregado;
 import org.sofka.ddd.producto.values.*;
 
 import java.util.List;
+import java.util.Objects;
 
 public class Producto extends AggregateEvent<ProductoId> {
 
@@ -47,5 +51,9 @@ public class Producto extends AggregateEvent<ProductoId> {
         var producto = new Producto(productoId);
         events.forEach(producto::applyEvent);
         return producto;
+    }
+
+    public void actualizarProducto(ProductoId productoId, Ubicacion ubicacion, Proveedor proveedor, org.sofka.ddd.producto.EstadoDelProducto estadoDelProducto, NombreProducto nombreProducto, org.sofka.ddd.producto.values.NombreMarca nombreMarca, Stock stock, FechaProducto fechaProducto, FechaCaducidad fechaCaducidad, FechaIngreso fechaIngreso, Precio precio) {
+        appendChange(new ProductoActualizado(productoId, ubicacion, proveedor, estadoDelProducto, nombreProducto, nombreMarca, stock, fechaProducto, fechaCaducidad, fechaIngreso, precio)).apply();
     }
 }

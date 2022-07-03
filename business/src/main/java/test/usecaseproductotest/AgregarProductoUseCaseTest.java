@@ -1,4 +1,4 @@
-package test.usecasevendedor;
+package test.usecaseproductotest;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;

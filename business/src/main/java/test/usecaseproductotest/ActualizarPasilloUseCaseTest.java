@@ -14,36 +14,36 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.sofka.ddd.producto.EstadoDelProducto;
 import org.sofka.ddd.producto.Proveedor;
 import org.sofka.ddd.producto.Ubicacion;
-import org.sofka.ddd.producto.commands.ActualizarEstanteria;
-import org.sofka.ddd.producto.events.EstanteriaActualizada;
+import org.sofka.ddd.producto.commands.ActualizarPasillo;
+import org.sofka.ddd.producto.events.PasilloActualizado;
 import org.sofka.ddd.producto.events.ProductoAgregado;
 import org.sofka.ddd.producto.values.*;
-import org.sofka.ddd.usecaseproducto.ActualizarEstanteriaUseCase;
+import org.sofka.ddd.usecaseproducto.ActualizarPasilloUseCase;
 
 import java.time.LocalDate;
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
-public class ActualizarestanteriaUseCaseTest {
+public class ActualizarPasilloUseCaseTest {
 
   @InjectMocks
-  ActualizarEstanteriaUseCase useCase;
+  ActualizarPasilloUseCase useCase;
 
   @Mock
   private DomainEventRepository repository;
 
   @Test
-  public void cuandoSeActualizaLaEstanteriaDeUnProducto() {
+  public void cuandoSeActualizaElPasilloDeUnProducto() {
 
     // arrange
     ProductoId productoId = ProductoId.of("2");
 
     UbicacionId ubicacionId = UbicacionId.of("1");
-    Estanteria estanteria = new Estanteria("23");
-    Pasillo pasillo = new Pasillo("A1");
+    Estanteria estanteria = new Estanteria("12");
+    Pasillo pasillo = new Pasillo("A2");
     Ubicacion ubicacion = new Ubicacion(ubicacionId, estanteria, pasillo);
 
-    var command = new ActualizarEstanteria(productoId, ubicacion, estanteria);
+    var command = new ActualizarPasillo(productoId, ubicacion, pasillo);
 
     Mockito.when(repository.getEventsBy(productoId.value())).thenReturn(historial());
     useCase.addRepository(repository);
@@ -57,10 +57,10 @@ public class ActualizarestanteriaUseCaseTest {
                     .getDomainEvents();
 
     // assert
-    var event = (EstanteriaActualizada) events.get(0);
+    var event = (PasilloActualizado) events.get(0);
     Assertions.assertEquals("1", event.ubicacion().identity().value());
-    Assertions.assertEquals("A1", event.ubicacion().pasillo().value());
-    Assertions.assertEquals("23", event.ubicacion().estanteria().value());
+    Assertions.assertEquals("A2", event.ubicacion().pasillo().value());
+    Assertions.assertEquals("12", event.ubicacion().estanteria().value());
   }
 
 
@@ -69,8 +69,8 @@ public class ActualizarestanteriaUseCaseTest {
     ProductoId productoId = ProductoId.of("2");
 
     UbicacionId ubicacionId = UbicacionId.of("1");
-    Estanteria estanteria = new Estanteria("A1");
-    Pasillo pasillo = new Pasillo("13");
+    Estanteria estanteria = new Estanteria("12");
+    Pasillo pasillo = new Pasillo("A1");
     Ubicacion ubicacion = new Ubicacion(ubicacionId, estanteria, pasillo);
 
     ProveedorId proveedorId = ProveedorId.of("1017272663");

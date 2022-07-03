@@ -9,7 +9,7 @@ public class EstanteriaActualizada extends DomainEvent {
   private final Estanteria estanteria;
 
   public EstanteriaActualizada(Ubicacion ubicacion, Estanteria estanteria) {
-    super("ddd.producto.productoagregado");
+    super("ddd.producto.estanteriaactualizada");
     this.ubicacion = ubicacion;
     this.estanteria = estanteria;
   }

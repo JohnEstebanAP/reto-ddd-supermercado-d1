@@ -72,5 +72,10 @@ public class Producto extends AggregateEvent<ProductoId> {
         appendChange(new EstanteriaActualizada(ubicacion, estanteria)).apply();
     }
 
+    public void actualizarPasillo(Ubicacion ubicacion, Pasillo pasillo) {
+        Objects.requireNonNull(ubicacion);
+        Objects.requireNonNull(pasillo);
+        appendChange(new PasilloActualizado(ubicacion, pasillo)).apply();
+    }
 
 }

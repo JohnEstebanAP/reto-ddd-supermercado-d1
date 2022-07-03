@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de ActualizarUbicacionUseCase, Pasa el tets:)">
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseproducto/ActualizarEstanteriaUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarestanteriaUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarEstanteria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/EstanteriaActualizada.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de ActualizarEstanteriaUseCase, Pasa el tets:)">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseproducto/ActualizarPasilloUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarPasilloUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarPasillo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/PasilloActualizado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarUbicacionUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarUbicacionUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarestanteriaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarEstanteriaUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/EstanteriaActualizada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/EstanteriaActualizada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +74,8 @@
       <recent name="org.sofka.ddd.usecaseEmpleado" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ActualizarestanteriaUseCaseTest">
-    <configuration name="ActualizarProductoUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ActualizarPasilloUseCaseTest">
+    <configuration name="ActualizarEstanteriaUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
@@ -83,7 +84,38 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
-      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarProductoUseCaseTest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarEstanteriaUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActualizarEstanteriaUseCaseTest.cuandoSeActualizaLaEstanteriaDeUnProducto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecaseproductotest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarEstanteriaUseCaseTest" />
+      <option name="METHOD_NAME" value="cuandoSeActualizaLaEstanteriaDeUnProducto" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ActualizarPasilloUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.usecaseproductotest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarPasilloUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,44 +152,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActualizarestanteriaUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.usecaseproductotest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
-      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarestanteriaUseCaseTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ActualizarestanteriaUseCaseTest.cuandoSeActualizaLaEstanteriaDeUnProducto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.usecaseproductotest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
-      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarestanteriaUseCaseTest" />
-      <option name="METHOD_NAME" value="cuandoSeActualizaLaEstanteriaDeUnProducto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ActualizarestanteriaUseCaseTest" />
-        <item itemvalue="JUnit.ActualizarestanteriaUseCaseTest.cuandoSeActualizaLaEstanteriaDeUnProducto" />
+        <item itemvalue="JUnit.ActualizarPasilloUseCaseTest" />
+        <item itemvalue="JUnit.ActualizarEstanteriaUseCaseTest" />
+        <item itemvalue="JUnit.ActualizarEstanteriaUseCaseTest.cuandoSeActualizaLaEstanteriaDeUnProducto" />
         <item itemvalue="JUnit.ActualizarUbicacionUseCaseTest.cuandoSeActualizaLaUbicacionDeUnProducto" />
         <item itemvalue="JUnit.ActualizarUbicacionUseCaseTest" />
-        <item itemvalue="JUnit.ActualizarProductoUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -401,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656871619833</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Tets de ActualizarEstanteriaUseCase, Pasa el tets:)">
+      <created>1656874018257</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1656874018261</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +440,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="se agregaron las entidades de la [AR]Empleado" />
     <MESSAGE value="se agregaron los eventos de dominio del [AR]Empleado" />
     <MESSAGE value="actualización de los appendChange del [AR]Empleado" />
     <MESSAGE value="primer caso de uso del [AR]Empleado" />
@@ -457,7 +464,8 @@
     <MESSAGE value="Tets de CrearTipoDeEmpleadoUseCase, Pasa el tets:)" />
     <MESSAGE value="Tets de ActualizarProductoUseCase, Pasa el tets:)" />
     <MESSAGE value="Tets de ActualizarUbicacionUseCase, Pasa el tets:)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tets de ActualizarUbicacionUseCase, Pasa el tets:)" />
+    <MESSAGE value="Tets de ActualizarEstanteriaUseCase, Pasa el tets:)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tets de ActualizarEstanteriaUseCase, Pasa el tets:)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

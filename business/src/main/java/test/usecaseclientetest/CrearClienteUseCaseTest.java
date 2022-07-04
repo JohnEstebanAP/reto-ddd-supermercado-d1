@@ -1,4 +1,4 @@
-package test;
+package test.usecaseclientetest;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
@@ -7,16 +7,17 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.sofka.ddd.cliente.Direccion;
-import org.sofka.ddd.cliente.Documento;
-import org.sofka.ddd.cliente.MedioDePago;
+import org.sofka.ddd.cliente.entitys.Direccion;
+import org.sofka.ddd.cliente.entitys.Documento;
+import org.sofka.ddd.cliente.entitys.MedioDePago;
 import org.sofka.ddd.cliente.commands.CrearCliente;
 import org.sofka.ddd.cliente.events.ClienteCreado;
 import org.sofka.ddd.cliente.values.*;
+import org.sofka.ddd.cliente.values.ids.ClienteId;
+import org.sofka.ddd.cliente.values.ids.DireccionId;
+import org.sofka.ddd.cliente.values.ids.DocumentoId;
+import org.sofka.ddd.cliente.values.ids.MedioDePagoId;
 import org.sofka.ddd.usucaseCliente.CrearClienteUseCase;
-
-import java.util.HashSet;
-import java.util.Set;
 
 @ExtendWith(MockitoExtension.class)
 public class CrearClienteUseCaseTest {

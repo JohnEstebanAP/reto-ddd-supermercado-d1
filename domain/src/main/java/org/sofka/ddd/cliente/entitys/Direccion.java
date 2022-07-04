@@ -1,8 +1,8 @@
-package org.sofka.ddd.cliente;
+package org.sofka.ddd.cliente.entitys;
 
 import co.com.sofka.domain.generic.Entity;
 import org.sofka.ddd.cliente.values.DireccionCasa;
-import org.sofka.ddd.cliente.values.DireccionId;
+import org.sofka.ddd.cliente.values.ids.DireccionId;
 
 public class Direccion extends Entity<DireccionId> {
   private DireccionCasa direccionCliente;

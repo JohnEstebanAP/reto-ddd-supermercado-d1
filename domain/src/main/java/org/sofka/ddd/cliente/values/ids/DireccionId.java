@@ -1,4 +1,4 @@
-package org.sofka.ddd.cliente.values;
+package org.sofka.ddd.cliente.values.ids;
 
 import co.com.sofka.domain.generic.Identity;
 

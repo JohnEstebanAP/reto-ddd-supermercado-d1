@@ -2,7 +2,7 @@ package org.sofka.ddd.factura;
 
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.cliente.values.ClienteId;
+import org.sofka.ddd.cliente.values.ids.ClienteId;
 import org.sofka.ddd.empleado.values.ids.EmpleadoId;
 import org.sofka.ddd.factura.events.*;
 import org.sofka.ddd.factura.values.*;

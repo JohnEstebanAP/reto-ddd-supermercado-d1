@@ -1,10 +1,10 @@
 package org.sofka.ddd.cliente.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import org.sofka.ddd.cliente.Direccion;
-import org.sofka.ddd.cliente.Documento;
-import org.sofka.ddd.cliente.MedioDePago;
-import org.sofka.ddd.cliente.values.ClienteId;
+import org.sofka.ddd.cliente.entitys.Direccion;
+import org.sofka.ddd.cliente.entitys.Documento;
+import org.sofka.ddd.cliente.entitys.MedioDePago;
+import org.sofka.ddd.cliente.values.ids.ClienteId;
 import org.sofka.ddd.cliente.values.NombreCliente;
 
 

@@ -1,12 +1,9 @@
-package org.sofka.ddd.cliente;
+package org.sofka.ddd.cliente.entitys;
 
 import co.com.sofka.domain.generic.Entity;
-import org.sofka.ddd.cliente.values.MedioDePagoId;
+import org.sofka.ddd.cliente.values.ids.MedioDePagoId;
 import org.sofka.ddd.cliente.values.MontoDeDinero;
 import org.sofka.ddd.cliente.values.TipoDePago;
-import org.sofka.ddd.factura.values.Fecha;
-import org.sofka.ddd.factura.values.TotalPago;
-import org.sofka.ddd.factura.values.TransaccionId;
 
 public class MedioDePago extends Entity<MedioDePagoId> {
 

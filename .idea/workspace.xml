@@ -4,17 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="se crearon todos los events del [AR] Producto">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarCaducidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarEstadoProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarNombreMarca.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarNombreProducto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarNombreProvedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarTelefonoProvedor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/AsignarEstado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/AsignarProveedor.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="se crearon todos los commants del [AR] Producto">
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usucaseCliente/AsignarDocumentoDelClienteUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usucaseCliente/AsignarNombreClienteUseCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarDocumentoDelClienteUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarNombreClienteUseCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/ActualizarNombreCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/AsignarDocumentoDelCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/AsignarNombreCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/DocumentoDelClienteAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/NombreClienteAsignado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/CrearClienteUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/CrearClienteUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/CrearFacturaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/CrearFacturaUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Direccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/entitys/Direccion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Documento.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/entitys/Documento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/MedioDePago.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/entitys/MedioDePago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/NombreDeUnClienteActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/NombreClienteActualizado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/CrearCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/CrearCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/ClienteCreado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/ClienteCreado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/ClienteId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/ids/ClienteId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/DireccionId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/ids/DireccionId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/DocumentoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/ids/DocumentoId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/MedioDePagoId.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/ids/MedioDePagoId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/Factura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/ActualizarNombreDeUnCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/ActualizarNombreDeUnCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarClasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarClasificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarCliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AgregarFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarTipoDeUnaClasificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarTipoDeUnaClasificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteActualizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteActualizado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteAgregado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/ClienteAgregado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaAgregada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/events/FacturaAgregada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,37 +71,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/john/Desarrollo/Desarrollo_sofka/ddd/reto-ddd-supermercado-d1/domain/src/main/java/org/sofka/ddd/cliente/values&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "jdk.selected.JAVA_MODULE": "18",
+    "last_opened_file_path": "/home/john/Desarrollo/Desarrollo_sofka/ddd/reto-ddd-supermercado-d1/domain/src/main/java/org/sofka/ddd/cliente/values/ids",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.sofka.ddd.producto.events" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values/ids" />
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values" />
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="test.usecaseclientetest" />
+      <recent name="org.sofka.ddd.usucaseCliente" />
+      <recent name="org.sofka.ddd.cliente.commands" />
+      <recent name="org.sofka.ddd.cliente.events" />
       <recent name="org.sofka.ddd.producto.commands" />
-      <recent name="org.sofka.ddd.producto.events" />
-      <recent name="test.usecaseproductotest" />
-      <recent name="org.sofka.ddd.usecaseproducto" />
-      <recent name="org.sofka.ddd.usecaseEmpleado" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ActualizarPasilloUseCaseTest">
+  <component name="RunManager" selected="JUnit.AsignarDocumentoDelClienteUseCaseTest">
     <configuration name="ActualizarEstanteriaUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
@@ -126,44 +149,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActualizarUbicacionUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AsignarDocumentoDelClienteUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecaseproductotest.*" />
+          <option name="PATTERN" value="test.usecaseclientetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
-      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarUbicacionUseCaseTest" />
+      <option name="PACKAGE_NAME" value="test.usecaseclientetest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseclientetest.AsignarDocumentoDelClienteUseCaseTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ActualizarUbicacionUseCaseTest.cuandoSeActualizaLaUbicacionDeUnProducto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AsignarNombreClienteUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.usecaseproductotest.*" />
+          <option name="PATTERN" value="test.usecaseclientetest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="test.usecaseproductotest" />
-      <option name="MAIN_CLASS_NAME" value="test.usecaseproductotest.ActualizarUbicacionUseCaseTest" />
-      <option name="METHOD_NAME" value="cuandoSeActualizaLaUbicacionDeUnProducto" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="test.usecaseclientetest" />
+      <option name="MAIN_CLASS_NAME" value="test.usecaseclientetest.AsignarNombreClienteUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AsignarDocumentoDelClienteUseCaseTest" />
+        <item itemvalue="JUnit.AsignarNombreClienteUseCaseTest" />
         <item itemvalue="JUnit.ActualizarPasilloUseCaseTest" />
         <item itemvalue="JUnit.ActualizarEstanteriaUseCaseTest" />
         <item itemvalue="JUnit.ActualizarEstanteriaUseCaseTest.cuandoSeActualizaLaEstanteriaDeUnProducto" />
-        <item itemvalue="JUnit.ActualizarUbicacionUseCaseTest.cuandoSeActualizaLaUbicacionDeUnProducto" />
-        <item itemvalue="JUnit.ActualizarUbicacionUseCaseTest" />
       </list>
     </recent_temporary>
   </component>
@@ -428,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656894229490</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="se crearon todos los commants del [AR] Producto">
+      <created>1656895626800</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1656895626800</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -442,7 +471,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Trabajo-Completo" />
                       </list>
                     </value>
                   </entry>
@@ -459,7 +488,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="primer Tesst para el CrearEmpleadoUseCase.java" />
     <MESSAGE value="validaciones de los objetos de valor en él [AR]Empleado" />
     <MESSAGE value="commands de el [AR] Empleado" />
     <MESSAGE value="values del [AR] Factura" />
@@ -484,7 +512,8 @@
     <MESSAGE value="Tets de ActualizarPasilloUseCase, Pasa el tets :)" />
     <MESSAGE value="Test de ActualizarPasilloUseCase, Pasa el test :)" />
     <MESSAGE value="se crearon todos los events del [AR] Producto" />
-    <option name="LAST_COMMIT_MESSAGE" value="se crearon todos los events del [AR] Producto" />
+    <MESSAGE value="se crearon todos los commants del [AR] Producto" />
+    <option name="LAST_COMMIT_MESSAGE" value="se crearon todos los commants del [AR] Producto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

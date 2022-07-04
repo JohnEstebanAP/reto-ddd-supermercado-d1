@@ -1,7 +1,7 @@
-package org.sofka.ddd.cliente;
+package org.sofka.ddd.cliente.entitys;
 
 import co.com.sofka.domain.generic.Entity;
-import org.sofka.ddd.cliente.values.DocumentoId;
+import org.sofka.ddd.cliente.values.ids.DocumentoId;
 import org.sofka.ddd.cliente.values.NumeroDocumento;
 import org.sofka.ddd.cliente.values.TipoDocumento;
 

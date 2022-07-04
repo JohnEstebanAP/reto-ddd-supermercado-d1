@@ -4,10 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="casos de uso disparado por eventos parte 2, AsignarDocumentoDelClienteUseCase">
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="se agregaron todos los eventos y comandos del [AR] Cliente">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/ActualizarDireccionCasa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/ActualizarMontoDeDinero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/ActualizarNumeroDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/ActualizarTipoDePago.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/AsignarMedioDePago.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/AsignarMontoDeDinero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/AsignarNumeroDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/commands/AsignarTipoDeDocumento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/DireccionCasaActualizada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/MedioDePagoAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/MontoDeDineroActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/MontoDeDineroAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/NumeroDocumentoActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/NumeroDocumentoAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/TipoDeDocumentoAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/TipoDePagoActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/ActualizarCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/ActualizarVendedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/AsociarVendedor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarEstadoFactura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarFechaDelEstado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarFechaDelaTransaccion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarTotalPago.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/EliminarFactura.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/EliminarProductoAsociado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarDocumentoDelClienteUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarDocumentoDelClienteUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarNombreClienteUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarNombreClienteUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/CrearFacturaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecasefacturatest/CrearFacturaUseCaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarFechaDeUnaFactura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/factura/commands/CambiarTipoDeUnaClasificacion.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +94,11 @@
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="test.usecaseclientetest" />
-      <recent name="org.sofka.ddd.usucaseCliente" />
+      <recent name="org.sofka.ddd.factura.commands" />
       <recent name="org.sofka.ddd.cliente.commands" />
       <recent name="org.sofka.ddd.cliente.events" />
-      <recent name="org.sofka.ddd.producto.commands" />
+      <recent name="test.usecaseclientetest" />
+      <recent name="org.sofka.ddd.usucaseCliente" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.AsignarNombreClienteUseCaseTest">
@@ -450,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656954461518</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="casos de uso disparado por eventos parte 2, AsignarDocumentoDelClienteUseCase">
+      <created>1656954935305</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1656954935305</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -481,7 +515,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="values del [AR] Producto" />
     <MESSAGE value="entidades del [AR] Producto" />
     <MESSAGE value="evento y comando de AgregarProducto del[AR] Producto" />
     <MESSAGE value="AgregarProductoUseCase del[AR] Producto" />
@@ -506,7 +539,8 @@
     <MESSAGE value="casos de uso disparado por eventos parte 1" />
     <MESSAGE value="casos de uso disparado por eventos parte 1, AsignarNombreClienteUseCaseTest" />
     <MESSAGE value="casos de uso disparado por eventos parte 2, AsignarDocumentoDelClienteUseCase" />
-    <option name="LAST_COMMIT_MESSAGE" value="casos de uso disparado por eventos parte 2, AsignarDocumentoDelClienteUseCase" />
+    <MESSAGE value="se agregaron todos los eventos y comandos del [AR] Cliente" />
+    <option name="LAST_COMMIT_MESSAGE" value="se agregaron todos los eventos y comandos del [AR] Cliente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

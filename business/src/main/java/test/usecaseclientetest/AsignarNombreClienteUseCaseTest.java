@@ -56,8 +56,8 @@ public class AsignarNombreClienteUseCaseTest {
     // assert
 
     var nombreAsignado = (NombreClienteAsignado) events.get(0);
-    Assertions.assertEquals("ddd.cliente.nombreclienteasignado", event.type);
-    Assertions.assertEquals("Luisa Fernanda", event.nombreCliente().value());
+    Assertions.assertEquals("ddd.cliente.nombreclienteasignado", nombreAsignado.type);
+    Assertions.assertEquals("Luisa Fernanda", nombreAsignado.nombreCliente().value());
   }
 
   public List<DomainEvent> historial() {

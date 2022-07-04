@@ -3,6 +3,7 @@ package test.usecaseclientetest;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
+import co.com.sofka.business.support.TriggeredEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -27,6 +28,8 @@ import org.sofka.ddd.usucaseCliente.AsignarDocumentoDelClienteUseCase;
 
 import java.util.List;
 
+import static org.mockito.Mockito.when;
+
 @ExtendWith(MockitoExtension.class)
 public class AsignarDocumentoDelClienteUseCaseTest {
 
@@ -36,7 +39,7 @@ public class AsignarDocumentoDelClienteUseCaseTest {
   @Mock private DomainEventRepository repository;
 
   @Test
-  public void cuandoSeAsignaUnNombreAlCliente() {
+  public void cuandoSeAsignaUnDocumentoAlCliente() {
 
     // arrange
     ClienteId clienteId = ClienteId.of("1017275689");
@@ -46,22 +49,23 @@ public class AsignarDocumentoDelClienteUseCaseTest {
     TipoDocumento tipoDocumento = new TipoDocumento("CEDULA_DE_CIUDADANIA");
     Documento documento = new Documento(documentoId, numeroDocumento, tipoDocumento);
 
-    var command = new AsignarDocumentoDelCliente(clienteId, documento);
+    var event = new DocumentoDelClienteAsignado(documento);
+    event.setAggregateRootId(clienteId.value());
 
-    Mockito.when(repository.getEventsBy(clienteId.value())).thenReturn(historial());
+    when(repository.getEventsBy(clienteId.value())).thenReturn(historial());
     useCase.addRepository(repository);
 
     // act
     var events =
         UseCaseHandler.getInstance()
             .setIdentifyExecutor("1017275689")
-            .syncExecutor(useCase, new RequestCommand<>(command))
+            .syncExecutor(useCase, new TriggeredEvent<>(event))
             .orElseThrow()
             .getDomainEvents();
 
     // assert
-    var event = (DocumentoDelClienteAsignado) events.get(0);
-    Assertions.assertEquals("1017275689", event.documento().identity().value());
+    var documentoAsignado = (DocumentoDelClienteAsignado) events.get(0);
+    Assertions.assertEquals("1017275689", documentoAsignado.documento().identity().value());
   }
 
   public List<DomainEvent> historial() {
@@ -81,9 +85,9 @@ public class AsignarDocumentoDelClienteUseCaseTest {
     DireccionCasa direccionCasa = new DireccionCasa("Calle 71C #54-44");
     Direccion direccionCliente = new Direccion(direccionId, direccionCasa);
 
-    var command =
+    var event =
         new ClienteCreado(clienteId, nombreCliente, documento, medioDePago, direccionCliente);
 
-    return List.of(command);
+    return List.of(event);
   }
 }

@@ -2,7 +2,6 @@ package org.sofka.ddd.cliente.events;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import org.sofka.ddd.cliente.values.NombreCliente;
-import org.sofka.ddd.cliente.values.ids.ClienteId;
 
 
 public class NombreClienteAsignado extends DomainEvent {

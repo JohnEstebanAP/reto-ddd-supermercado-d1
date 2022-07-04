@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="casos de uso disparado por eventos parte 1">
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="casos de uso disparado por eventos parte 1, AsignarNombreClienteUseCaseTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usucaseCliente/AsignarNombreClienteUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usucaseCliente/AsignarNombreClienteUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usucaseCliente/AsignarDocumentoDelClienteUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usucaseCliente/AsignarDocumentoDelClienteUseCase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarDocumentoDelClienteUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarDocumentoDelClienteUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarNombreClienteUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseclientetest/AsignarNombreClienteUseCaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/ClienteChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/ClienteChange.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/NombreClienteAsignado.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/events/NombreClienteAsignado.java" afterDir="false" />
     </list>
@@ -78,7 +77,7 @@
       <recent name="org.sofka.ddd.producto.commands" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AsignarNombreClienteUseCaseTest">
+  <component name="RunManager" selected="JUnit.AsignarDocumentoDelClienteUseCaseTest">
     <configuration name="ActualizarEstanteriaUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business" />
       <extension name="coverage">
@@ -157,8 +156,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AsignarNombreClienteUseCaseTest" />
         <item itemvalue="JUnit.AsignarDocumentoDelClienteUseCaseTest" />
+        <item itemvalue="JUnit.AsignarNombreClienteUseCaseTest" />
         <item itemvalue="JUnit.ActualizarPasilloUseCaseTest" />
         <item itemvalue="JUnit.ActualizarEstanteriaUseCaseTest" />
         <item itemvalue="JUnit.ActualizarEstanteriaUseCaseTest.cuandoSeActualizaLaEstanteriaDeUnProducto" />
@@ -440,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656899684470</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="casos de uso disparado por eventos parte 1, AsignarNombreClienteUseCaseTest">
+      <created>1656953010253</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1656953010253</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -471,7 +477,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="commands de el [AR] Empleado" />
     <MESSAGE value="values del [AR] Factura" />
     <MESSAGE value="values del [AR] Producto" />
     <MESSAGE value="entidades del [AR] Producto" />
@@ -496,7 +501,8 @@
     <MESSAGE value="se crearon todos los events del [AR] Producto" />
     <MESSAGE value="se crearon todos los commants del [AR] Producto" />
     <MESSAGE value="casos de uso disparado por eventos parte 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="casos de uso disparado por eventos parte 1" />
+    <MESSAGE value="casos de uso disparado por eventos parte 1, AsignarNombreClienteUseCaseTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="casos de uso disparado por eventos parte 1, AsignarNombreClienteUseCaseTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

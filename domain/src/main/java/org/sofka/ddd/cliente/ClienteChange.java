@@ -2,6 +2,7 @@ package org.sofka.ddd.cliente;
 
 import co.com.sofka.domain.generic.EventChange;
 import org.sofka.ddd.cliente.events.ClienteCreado;
+import org.sofka.ddd.cliente.events.DocumentoDelClienteAsignado;
 import org.sofka.ddd.cliente.events.NombreClienteAsignado;
 
 public class ClienteChange extends EventChange {
@@ -12,9 +13,14 @@ public class ClienteChange extends EventChange {
           cliente.crearCliente(event.entityId());
         });
 
-
-    apply((NombreClienteAsignado event) -> {
+    apply(
+        (NombreClienteAsignado event) -> {
           cliente.nombreCliente = event.nombreCliente();
+        });
+
+    apply(
+        (DocumentoDelClienteAsignado event) -> {
+          cliente.documento = event.documento();
         });
     /*
 

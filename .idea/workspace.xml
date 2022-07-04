@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Tets de ActualizarEstanteriaUseCase, Pasa el tets:)">
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/org/sofka/ddd/usecaseproducto/ActualizarPasilloUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarPasilloUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/commands/ActualizarPasillo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/PasilloActualizado.java" afterDir="false" />
+    <list default="true" id="3312460c-01a3-4556-be91-bb9d7333966d" name="Changes" comment="Test de ActualizarPasilloUseCase, Pasa el test :)">
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/CaducidadActualizada.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/EstadoAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/EstadoProductoActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/NombreMarcaActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/NombreProductoActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/NombreProveedorActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/PrecioCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/ProveedorAsignado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/StockActualizado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/TelefonoProveedorActualizado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarestanteriaUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/business/src/main/java/test/usecaseproductotest/ActualizarEstanteriaUseCaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/EstanteriaActualizada.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/producto/events/EstanteriaActualizada.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,15 +66,18 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.sofka.ddd.producto.events" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/sofka/ddd/cliente/values" />
       <recent name="$PROJECT_DIR$/domain/src/main/java/org/example/joyeria/factura" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.sofka.ddd.producto.events" />
       <recent name="test.usecaseproductotest" />
       <recent name="org.sofka.ddd.usecaseproducto" />
       <recent name="org.sofka.ddd.producto.commands" />
-      <recent name="org.sofka.ddd.producto.events" />
       <recent name="org.sofka.ddd.usecaseEmpleado" />
     </key>
   </component>
@@ -409,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656874018261</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Test de ActualizarPasilloUseCase, Pasa el test :)">
+      <created>1656891563849</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1656891563849</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -440,8 +454,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="se agregaron los eventos de dominio del [AR]Empleado" />
-    <MESSAGE value="actualización de los appendChange del [AR]Empleado" />
     <MESSAGE value="primer caso de uso del [AR]Empleado" />
     <MESSAGE value="primer Tesst para el CrearEmpleadoUseCase.java" />
     <MESSAGE value="validaciones de los objetos de valor en él [AR]Empleado" />
@@ -465,7 +477,9 @@
     <MESSAGE value="Tets de ActualizarProductoUseCase, Pasa el tets:)" />
     <MESSAGE value="Tets de ActualizarUbicacionUseCase, Pasa el tets:)" />
     <MESSAGE value="Tets de ActualizarEstanteriaUseCase, Pasa el tets:)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tets de ActualizarEstanteriaUseCase, Pasa el tets:)" />
+    <MESSAGE value="Tets de ActualizarPasilloUseCase, Pasa el tets :)" />
+    <MESSAGE value="Test de ActualizarPasilloUseCase, Pasa el test :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test de ActualizarPasilloUseCase, Pasa el test :)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

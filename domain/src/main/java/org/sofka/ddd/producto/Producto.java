@@ -78,4 +78,58 @@ public class Producto extends AggregateEvent<ProductoId> {
         appendChange(new PasilloActualizado(ubicacion, pasillo)).apply();
     }
 
+    public void asignarProvedor(Proveedor proveedor) {
+        Objects.requireNonNull(proveedor);
+        appendChange(new ProveedorAsignado(proveedor)).apply();
+    }
+
+    public void actualizarTelefonoProveedor(Proveedor proveedor, TelefonoProveedor telefonoProveedor) {
+        Objects.requireNonNull(proveedor);
+        Objects.requireNonNull(telefonoProveedor);
+        appendChange(new TelefonoProveedorActualizado(proveedor, telefonoProveedor)).apply();
+    }
+
+    public void actualizarNombreProveedor(Proveedor proveedor, NombreProveedor nombreProveedor) {
+        Objects.requireNonNull(proveedor);
+        Objects.requireNonNull(nombreProveedor);
+        appendChange(new NombreProveedorActualizado(proveedor, nombreProveedor)).apply();
+    }
+
+    public void asignarEstado(EstadoDelProducto estadoDelProducto) {
+        Objects.requireNonNull(estadoDelProducto);
+        appendChange(new EstadoAsignado(estadoDelProducto)).apply();
+    }
+
+    public void actualizarEstadoProducto(EstadoDelProducto estadoDelProducto, EstadoProducto estadoProducto) {
+        Objects.requireNonNull(estadoDelProducto);
+        Objects.requireNonNull(estadoProducto);
+        appendChange(new EstadoProductoActualizado(estadoDelProducto, estadoProducto)).apply();
+    }
+
+    public void actualizarCaducidad(EstadoDelProducto estadoDelProducto, Caducidad caducidad) {
+        Objects.requireNonNull(estadoDelProducto);
+        Objects.requireNonNull(caducidad);
+        appendChange(new CaducidadActualizada(estadoDelProducto, caducidad)).apply();
+    }
+
+    public void actualizarNombreProducto(NombreProducto nombreProducto) {
+        Objects.requireNonNull(nombreProducto);
+        appendChange(new NombreProductoActualizado(nombreProducto)).apply();
+    }
+
+    public void actualizarNombreMarca(NombreMarca nombreMarca) {
+        Objects.requireNonNull(nombreMarca);
+        appendChange(new NombreMarcaActualizado(nombreMarca)).apply();
+    }
+
+    public void actualizarStock(Stock stock) {
+        Objects.requireNonNull(stock);
+        appendChange(new StockActualizado(stock)).apply();
+    }
+
+    public void cambiarPrecio(Precio precio) {
+        Objects.requireNonNull(precio);
+        appendChange(new PrecioCambiado(precio)).apply();
+    }
+
 }

@@ -2,19 +2,17 @@ package test.usecaseclientetest;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
-import co.com.sofka.business.support.RequestCommand;
+import co.com.sofka.business.support.TriggeredEvent;
 import co.com.sofka.domain.generic.DomainEvent;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.sofka.ddd.cliente.entitys.Direccion;
 import org.sofka.ddd.cliente.entitys.Documento;
 import org.sofka.ddd.cliente.entitys.MedioDePago;
-import org.sofka.ddd.cliente.commands.AsignarNombreCliente;
 import org.sofka.ddd.cliente.events.ClienteCreado;
 import org.sofka.ddd.cliente.events.NombreClienteAsignado;
 import org.sofka.ddd.cliente.values.*;
@@ -24,8 +22,9 @@ import org.sofka.ddd.cliente.values.ids.DocumentoId;
 import org.sofka.ddd.cliente.values.ids.MedioDePagoId;
 import org.sofka.ddd.usucaseCliente.AsignarNombreClienteUseCase;
 
-
 import java.util.List;
+
+import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 public class AsignarNombreClienteUseCaseTest {
@@ -41,22 +40,23 @@ public class AsignarNombreClienteUseCaseTest {
     ClienteId clienteId = ClienteId.of("1017272663");
     NombreCliente nombreCliente = new NombreCliente("Luisa Fernanda");
 
-    var command = new AsignarNombreCliente(clienteId, nombreCliente);
+    var event = new NombreClienteAsignado(nombreCliente);
+    event.setAggregateRootId(clienteId.value());
 
-
-    Mockito.when(repository.getEventsBy(clienteId.value())).thenReturn(historial());
+    when(repository.getEventsBy(clienteId.value())).thenReturn(historial());
     useCase.addRepository(repository);
 
     // act
     var events =
         UseCaseHandler.getInstance()
-                .setIdentifyExecutor("1017272663")
-            .syncExecutor(useCase, new RequestCommand<>(command))
+            .setIdentifyExecutor("1017272663")
+            .syncExecutor(useCase, new TriggeredEvent<>(event))
             .orElseThrow()
             .getDomainEvents();
-
     // assert
-    var event = (NombreClienteAsignado) events.get(0);
+
+    var nombreAsignado = (NombreClienteAsignado) events.get(0);
+    Assertions.assertEquals("ddd.cliente.nombreclienteasignado", event.type);
     Assertions.assertEquals("Luisa Fernanda", event.nombreCliente().value());
   }
 

@@ -2,16 +2,22 @@ package org.sofka.ddd.cliente;
 
 import co.com.sofka.domain.generic.EventChange;
 import org.sofka.ddd.cliente.events.ClienteCreado;
+import org.sofka.ddd.cliente.events.NombreClienteAsignado;
 
 public class ClienteChange extends EventChange {
   public ClienteChange(Cliente cliente) {
 
-      apply(
-              (ClienteCreado event) -> {
-                  cliente.crearCliente(event.entityId());
-              });
+    apply(
+        (ClienteCreado event) -> {
+          cliente.crearCliente(event.entityId());
+        });
 
+
+    apply((NombreClienteAsignado event) -> {
+          cliente.nombreCliente = event.nombreCliente();
+        });
     /*
+
     apply((AreaAgregada event)->{
         vendedor.agregarArea(event.getAreaId(),event.getNombre());
     });

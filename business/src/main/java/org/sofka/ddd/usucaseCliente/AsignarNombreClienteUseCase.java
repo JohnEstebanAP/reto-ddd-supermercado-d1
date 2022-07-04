@@ -1,22 +1,24 @@
 package org.sofka.ddd.usucaseCliente;
 
 import co.com.sofka.business.generic.UseCase;
-import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.business.support.ResponseEvents;
+import co.com.sofka.business.support.TriggeredEvent;
 import org.sofka.ddd.cliente.Cliente;
-import org.sofka.ddd.cliente.commands.AsignarNombreCliente;
+import org.sofka.ddd.cliente.events.NombreClienteAsignado;
+import org.sofka.ddd.cliente.values.ids.ClienteId;
 
+public class AsignarNombreClienteUseCase
+    extends UseCase<TriggeredEvent<NombreClienteAsignado>, ResponseEvents> {
 
-public class AsignarNombreClienteUseCase extends UseCase<RequestCommand<AsignarNombreCliente>, ResponseEvents> {
+  @Override
+  public void executeUseCase(
+      TriggeredEvent<NombreClienteAsignado> nombreClienteAsignadoTriggeredEvent) {
 
-    @Override
-    public void executeUseCase(RequestCommand<AsignarNombreCliente> asignarNombreClienteRequestCommand) {
+    var event = nombreClienteAsignadoTriggeredEvent.getDomainEvent();
+    var cliente = Cliente.from(ClienteId.of(event.aggregateRootId()), retrieveEvents());
 
-        var command = asignarNombreClienteRequestCommand.getCommand();
-        var cliente = Cliente.from (command.clienteId(), retrieveEvents());
+    cliente.asignarNombreCliente(event.nombreCliente());
 
-        cliente.asignarNombreCliente(command.nombreCliente());
-
-        emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
-    }
+    emit().onResponse(new ResponseEvents(cliente.getUncommittedChanges()));
+  }
 }

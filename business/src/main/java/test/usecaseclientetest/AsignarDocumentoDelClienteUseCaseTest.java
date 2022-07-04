@@ -12,20 +12,18 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.sofka.ddd.cliente.commands.AsignarDocumentoDelCliente;
-import org.sofka.ddd.cliente.commands.AsignarNombreCliente;
 import org.sofka.ddd.cliente.entitys.Direccion;
 import org.sofka.ddd.cliente.entitys.Documento;
 import org.sofka.ddd.cliente.entitys.MedioDePago;
 import org.sofka.ddd.cliente.events.ClienteCreado;
 import org.sofka.ddd.cliente.events.DocumentoDelClienteAsignado;
-import org.sofka.ddd.cliente.events.NombreClienteAsignado;
 import org.sofka.ddd.cliente.values.*;
 import org.sofka.ddd.cliente.values.ids.ClienteId;
 import org.sofka.ddd.cliente.values.ids.DireccionId;
 import org.sofka.ddd.cliente.values.ids.DocumentoId;
 import org.sofka.ddd.cliente.values.ids.MedioDePagoId;
 import org.sofka.ddd.usucaseCliente.AsignarDocumentoDelClienteUseCase;
-import org.sofka.ddd.usucaseCliente.AsignarNombreClienteUseCase;
+
 
 import java.util.List;
 

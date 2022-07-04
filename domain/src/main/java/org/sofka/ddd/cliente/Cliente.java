@@ -18,10 +18,10 @@ import java.util.Objects;
 
 public class Cliente extends AggregateEvent<ClienteId> {
 
-  private NombreCliente nombreCliente;
-  private Documento documento;
-  private MedioDePago medioDePago;
-  private Direccion direccionCliente;
+  protected NombreCliente nombreCliente;
+  protected Documento documento;
+  protected MedioDePago medioDePago;
+  protected Direccion direccionCliente;
 
   public Cliente(ClienteId entityId,NombreCliente nombreCliente, Documento documento, MedioDePago medioDePago, Direccion direccionCliente) {
     super(entityId);

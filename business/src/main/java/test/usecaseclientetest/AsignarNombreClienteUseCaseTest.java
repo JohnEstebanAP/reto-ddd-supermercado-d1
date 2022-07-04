@@ -36,8 +36,10 @@ public class AsignarNombreClienteUseCaseTest {
   @Test
   public void cuandoSeAsignaUnNombreAlCliente() {
 
+
+    final String CEDULA = "1017272663";
     // arrange
-    ClienteId clienteId = ClienteId.of("1017272663");
+    ClienteId clienteId = ClienteId.of(CEDULA);
     NombreCliente nombreCliente = new NombreCliente("Luisa Fernanda");
 
     var event = new NombreClienteAsignado(nombreCliente);
@@ -49,7 +51,7 @@ public class AsignarNombreClienteUseCaseTest {
     // act
     var events =
         UseCaseHandler.getInstance()
-            .setIdentifyExecutor("1017272663")
+            .setIdentifyExecutor(CEDULA)
             .syncExecutor(useCase, new TriggeredEvent<>(event))
             .orElseThrow()
             .getDomainEvents();

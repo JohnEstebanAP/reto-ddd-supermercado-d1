@@ -41,11 +41,13 @@ public class AsignarDocumentoDelClienteUseCaseTest {
   @Test
   public void cuandoSeAsignaUnDocumentoAlCliente() {
 
-    // arrange
-    ClienteId clienteId = ClienteId.of("1017275689");
+    final String CEDULA = "1017245689";
 
-    DocumentoId documentoId = DocumentoId.of("1017275689");
-    NumeroDocumento numeroDocumento = new NumeroDocumento("1017275689");
+    // arrange
+    ClienteId clienteId = ClienteId.of(CEDULA);
+
+    DocumentoId documentoId = DocumentoId.of(CEDULA);
+    NumeroDocumento numeroDocumento = new NumeroDocumento(CEDULA);
     TipoDocumento tipoDocumento = new TipoDocumento("CEDULA_DE_CIUDADANIA");
     Documento documento = new Documento(documentoId, numeroDocumento, tipoDocumento);
 
@@ -58,14 +60,14 @@ public class AsignarDocumentoDelClienteUseCaseTest {
     // act
     var events =
         UseCaseHandler.getInstance()
-            .setIdentifyExecutor("1017275689")
+            .setIdentifyExecutor(CEDULA)
             .syncExecutor(useCase, new TriggeredEvent<>(event))
             .orElseThrow()
             .getDomainEvents();
 
     // assert
     var documentoAsignado = (DocumentoDelClienteAsignado) events.get(0);
-    Assertions.assertEquals("1017275689", documentoAsignado.documento().identity().value());
+    Assertions.assertEquals(CEDULA, documentoAsignado.documento().identity().value());
   }
 
   public List<DomainEvent> historial() {
